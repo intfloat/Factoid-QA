@@ -1,12 +1,10 @@
-#PKUQA#
+﻿#PKUQA#
 
 ### What is this repository for? ###
 
 * Quick summary
 
-    This is a PKU 2014 fall course project, aiming to build a Chinese factoid question answering system based on          wikipedia pages. see [course website](http://www.icst.pku.edu.cn/lcwm/course/sckr2014/) for more details.
-
-* Version 1.0
+    This is a PKU 2014 fall course project, aiming to build a Chinese factoid question answering system based on wikipedia pages. see [course website](http://www.icst.pku.edu.cn/lcwm/course/sckr2014/) for more details.
 
 ### Related materials ###
 
@@ -21,21 +19,10 @@
     [Watson API](https://developer.ibm.com/watson/)
 
     [Simple git tutorial](http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
+	
+	[wiki预处理工具](http://licstar.net/archives/262)
+	
+	[Stanford 分词、词性标注、命名实体识别工具](http://nlp.stanford.edu/software/index.shtml)
 
 ### Who do I talk to? ###
 
@@ -43,7 +30,7 @@
 
     [Liang Wang](wangliangpeking@gmail.com)
 
-    [Qi Li](empty for now)
+    [Qi Li](stomier@126.com)
 
     [Yanyan Jia](empty for now)
 
