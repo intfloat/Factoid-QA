@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<QuestionSet>
+    <question id="1">
+        <q>哪部电影是唯一一部获得奥斯卡最佳外语片的华语电影？</q>
+        <category>Movie</category>
+		<query>奥斯卡最佳外语片 华语电影</query>		
+    </question>
+	<question id="10">
+	    <q>魔方是由谁发明的机械益智玩具？</q>
+		<category>People</category>
+		<query>魔方</query>
+	</question>
+	<question id="15">
+	    <q>芭蕾起源于哪个国家？</q>
+		<category>Location</category>
+		<query>芭蕾 起源</query>
+		<query>芭蕾起源于哪个国家</query>
+	</question>
+</QuestionSet>
