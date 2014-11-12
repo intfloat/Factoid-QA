@@ -6,6 +6,11 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
+/**
+ * 
+ * @author Liang Wang
+ *
+ */
 public class GoogleCrawlerTest {
 
 	@Test
@@ -18,6 +23,6 @@ public class GoogleCrawlerTest {
 			System.out.println(snippet);
 			assertTrue(snippet.length() > 0);
 		}
-	}
+	} // end testcase SearchResultNotEmpty
 
-}
+} // end class GoogleCrawlerTest
