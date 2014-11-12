@@ -71,7 +71,7 @@ public class GoogleCrawler implements Crawler {
         	}
         } catch (Exception e) {
         	LOG.warn("failed to get search result for: " + query);
-        }
+        }        
         
 		return result;
 	} // end method getSearchResult
