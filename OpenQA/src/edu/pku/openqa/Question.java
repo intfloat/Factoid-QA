@@ -15,7 +15,7 @@ public class Question {
 	private String question;
 	private String category;
 	private ArrayList<String> query;
-	private ArrayList<String> summary;
+	private ArrayList<String> summary;	
 	
 	/**
 	 * empty constructor

@@ -21,7 +21,7 @@ public class EntryPoint {
 	private static QuestionSet qs = new QuestionSet();
 	private static BaiduCrawler baidu = new BaiduCrawler();
 	private static GoogleCrawler google = new GoogleCrawler();
-	private static Log LOG = LogFactory.getLog(EntryPoint.class);
+	private static Log LOG = LogFactory.getLog(EntryPoint.class);	
 
 	/**
 	 * @param args
