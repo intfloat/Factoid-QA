@@ -1,12 +1,6 @@
 package edu.pku.QRanking;
 
-/**
- * Answer Extraction 
- *
- * @author 李琦
- * @email stormier@126.com
- * 
- */
+
 import java.io.*;
 import java.util.*;
 
@@ -18,14 +12,15 @@ import org.jsoup.select.Elements;
 import edu.pku.QRanking.answerscore.CombinationAnswerScorer;
 import edu.pku.QRanking.evidencescore.CombinationEvidenceScorer;
 import edu.pku.QRanking.util.NLPTools;
-import edu.stanford.nlp.ie.AbstractSequenceClassifier;
-import edu.stanford.nlp.ie.crf.CRFClassifier;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.Sentence;
-import edu.stanford.nlp.ling.TaggedWord;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.tagger.maxent.MaxentTagger;
-import edu.stanford.nlp.ling.Word;
+
+/**
+ * Answer Extraction 
+ *
+ * @author 李琦
+ * @email stormier@126.com
+ * 
+ */
+
 
 public class AnswerExtraction {
 	List<Question> questions = new ArrayList<>();
@@ -69,6 +64,7 @@ public class AnswerExtraction {
 				newone = tool.segment(evidence);
 				new_evidence.evidence_content = newone;
 				new_evidence.tagged_evidence = tool.postag(newone);
+				new_evidence.score = 0;
 				question.evidences.add(new_evidence);
 			}
 
@@ -95,10 +91,9 @@ public class AnswerExtraction {
 		File output = new File(outputFileName);
 		 BufferedWriter writer  = new BufferedWriter(new FileWriter(output));  
 		for (Question question : questions) {
-			selector.select(question);
-			for(Answer answer: question.answers)
+			for(SynthesizedAnswer answer: question.synthesized_answers)
 			{
-				writer.write(i+"\t"+answer.answer_content+"\n");
+				writer.write(i+"\t"+answer.answer+" "+answer.score+"\n");
 			}
 			i++;
 		}
