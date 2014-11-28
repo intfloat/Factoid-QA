@@ -43,7 +43,7 @@ public class TermAlignmentScorer implements AnswerScorer{
 				for (String word : origin_pattern) {
 					origin_pattern_string += word;
 				}
-				System.out.println("origin pattern:"+origin_pattern_string);
+		//		System.out.println("origin pattern:"+origin_pattern_string);
 				
                 List<String> patterns = new ArrayList<String>();
                 patterns.add(origin_pattern_string);
@@ -70,7 +70,7 @@ public class TermAlignmentScorer implements AnswerScorer{
                     Matcher matcher = p.matcher(evidence_content_string);
                     while (matcher.find()) {
                         String text = matcher.group();
-                        System.out.println("mached pattern:"+pattern+" text:"+text);
+           //             System.out.println("mached pattern:"+pattern+" text:"+text);
                         count++;
                         length += text.length();
                     }

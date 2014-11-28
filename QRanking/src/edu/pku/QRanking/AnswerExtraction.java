@@ -1,6 +1,5 @@
 package edu.pku.QRanking;
 
-
 import java.io.*;
 import java.util.*;
 
@@ -14,13 +13,12 @@ import edu.pku.QRanking.evidencescore.CombinationEvidenceScorer;
 import edu.pku.QRanking.util.NLPTools;
 
 /**
- * Answer Extraction 
+ * Answer Extraction
  *
  * @author 李琦
  * @email stormier@126.com
  * 
  */
-
 
 public class AnswerExtraction {
 	List<Question> questions = new ArrayList<>();
@@ -28,7 +26,8 @@ public class AnswerExtraction {
 	CombinationEvidenceScorer evidenceScorer = new CombinationEvidenceScorer();
 	CombinationAnswerScorer answerScorer = new CombinationAnswerScorer();
 
-	public void extractAnswer(String inputFileName, String outputFileName) throws Exception {
+	public void extractAnswer(String inputFileName, String outputFileName)
+			throws Exception {
 		NLPTools tool = new NLPTools();
 
 		File input = new File(inputFileName);
@@ -52,8 +51,17 @@ public class AnswerExtraction {
 			case "People":
 				question.type = QuestionType.PERSON_NAME;
 				break;
-				default:
-					question.type = QuestionType.NULL;
+			case "Location":
+				question.type = QuestionType.LOCATION_NAME;
+				break;
+			case "Number":
+				question.type = QuestionType.NUMBER;
+				break;
+			case "Other":
+				question.type = QuestionType.OTHER;
+				break;
+			default:
+				question.type = QuestionType.NULL;
 			}
 
 			// get evidence
@@ -70,40 +78,45 @@ public class AnswerExtraction {
 
 			questions.add(question);
 		}
-		
-		//get candidate answers
+
+		// get candidate answers
 		for (Question question : questions) {
 			selector.select(question);
 		}
 
-		//score evidences
+		// score evidences
 		for (Question question : questions) {
 			evidenceScorer.score(question);
 		}
-		
-		//score answers
+
+		// score answers
 		for (Question question : questions) {
 			answerScorer.score(question);
 		}
-		
-		//show answers
+
+		// show answers
 		int i = 1;
 		File output = new File(outputFileName);
-		 BufferedWriter writer  = new BufferedWriter(new FileWriter(output));  
+		BufferedWriter writer = new BufferedWriter(new FileWriter(output));
 		for (Question question : questions) {
-			for(SynthesizedAnswer answer: question.synthesized_answers)
-			{
-				writer.write(i+"\t"+answer.answer+" "+answer.score+"\n");
+
+			writer.write(i + "\t" + question.synthesized_answers.get(0).answer
+					+"\n");
+
+			for (SynthesizedAnswer answer : question.synthesized_answers) {
+				System.out.println(i + "\t" + answer.answer + " " + answer.score
+						+ "\n");
 			}
+
 			i++;
 		}
 		writer.flush();
-		writer.close();  
+		writer.close();
 	}
 
 	public static void main(String[] args) throws Exception {
 		AnswerExtraction ae = new AnswerExtraction();
-		ae.extractAnswer("stage3.xml","stage4.xml");
+		ae.extractAnswer("stage3.xml", "stage4.xml");
 
 	}
 

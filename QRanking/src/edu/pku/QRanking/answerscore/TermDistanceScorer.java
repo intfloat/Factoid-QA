@@ -29,6 +29,7 @@ public class TermDistanceScorer implements AnswerScorer {
 			for (String term : answer.evidence.evidence_content) {
 				if (term.equals(answer.answer_content)) {
 					answer_positions.add(i);
+					System.out.println("pos1: "+i);
 				}
 				i++;
 			}
@@ -58,7 +59,10 @@ public class TermDistanceScorer implements AnswerScorer {
 					distance += Math.abs(question_position - answer_position);
 				}
 			}
-
+			
+			if(distance == 0)
+				return ;
+			
 			//float score = answer.score / distance;
 			//float score = weight * 50/ distance;
 			float score = weight * question.title.size()/ (float)distance;
