@@ -1,0 +1,19 @@
+Fri, 28 Nov 2014 18:50:04 entrypoint.py[line:16] INFO test
+Fri, 28 Nov 2014 18:50:04 entrypoint.py[line:20] INFO start to extract features
+Fri, 28 Nov 2014 18:50:05 __init__.py[line:70] DEBUG Building prefix dict from D:\python 2.6.6\lib\site-packages\jieba\dict.txt ...
+Fri, 28 Nov 2014 18:50:05 __init__.py[line:79] DEBUG Loading model from cache c:\users\admini~1\appdata\local\temp\jieba.cache
+Fri, 28 Nov 2014 18:50:06 __init__.py[line:106] DEBUG Loading model cost 0.844000101089 seconds.
+Fri, 28 Nov 2014 18:50:06 __init__.py[line:107] DEBUG Prefix dict has been built succesfully.
+Fri, 28 Nov 2014 18:50:28 entrypoint.py[line:28] INFO split data into training data & test data
+Fri, 28 Nov 2014 18:50:28 entrypoint.py[line:41] INFO start to train a classifier
+Fri, 28 Nov 2014 18:50:43 qclassifier.py[line:40] INFO train time: 15.1849999428 seconds.
+Fri, 28 Nov 2014 18:50:43 qclassifier.py[line:56] INFO              precision    recall  f1-score   support
+
+          0       0.88      0.90      0.89       649
+          1       0.92      0.90      0.91       469
+          2       0.77      0.81      0.79       430
+          3       0.74      0.67      0.70       284
+
+avg / total       0.84      0.84      0.84      1832
+
+Fri, 28 Nov 2014 18:50:43 entrypoint.py[line:45] INFO done
