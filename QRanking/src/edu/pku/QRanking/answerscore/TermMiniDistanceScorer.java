@@ -61,7 +61,8 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 					distance = temp;
 				}
 			}
-
+			if(distance == 0)
+				return ;
 			//float score = answer.score / distance;
 			float score = weight / distance;
 			System.out.println("term mini distance score:" + answer.answer_content

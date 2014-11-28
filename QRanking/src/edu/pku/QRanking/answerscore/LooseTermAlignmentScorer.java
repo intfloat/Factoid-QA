@@ -42,7 +42,7 @@ public class LooseTermAlignmentScorer implements AnswerScorer{
 				for (String word : origin_pattern) {
 					origin_pattern_string += word;
 				}
-				System.out.println("origin loose pattern:"+origin_pattern_string);
+		//		System.out.println("origin loose pattern:"+origin_pattern_string);
 				
                 List<String> patterns = new ArrayList<String>();
                 patterns.add(origin_pattern_string);
@@ -69,7 +69,7 @@ public class LooseTermAlignmentScorer implements AnswerScorer{
                     Matcher matcher = p.matcher(evidence_content_string);
                     while (matcher.find()) {
                         String text = matcher.group();
-                        System.out.println("mached loose pattern:"+pattern+" text:"+text);
+               //         System.out.println("mached loose pattern:"+pattern+" text:"+text);
                         count++;
                         length += text.length();
                     }
