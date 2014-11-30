@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 import jieba, logging
 from xml.etree import ElementTree as et
 import jieba.posseg as pseg
@@ -44,11 +44,18 @@ class FeatureExtractor:
         extract features for data
         """
         for question in self.questions:
-            f = []
-            f.extend(self.__extract_word_feature(question))
-            f.extend(self.__extract_pos_feature(question))
+            f = self.extract_features_aux(question)
             self.features.append(f)
         return self.features
+
+    def extract_features_aux(self, question):
+        """
+        Auxiliary function for extracting features
+        """
+        f = []
+        f.extend(self.__extract_word_feature(question))
+        f.extend(self.__extract_pos_feature(question))
+        return f
 
     def get_labels(self):
         """
@@ -61,7 +68,16 @@ class FeatureExtractor:
         extract raw word features
         """
         words = jieba.cut(question)
-        return words
+        res = []
+        for word in words:
+            if len(word) == 0:
+                continue
+            if word == ' ' or word == u'？' or word == u'的' or word == u'是':
+                continue
+            # if word == u'得' or word == u'地' or word == '.':
+                # continue
+            res.append(word)
+        return res
 
     def __extract_pos_feature(self, question):
         """

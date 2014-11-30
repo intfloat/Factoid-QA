@@ -4,6 +4,10 @@
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
+        <Question>U这首歌什么时候出的</Question>
+        <AnswerType>Number</AnswerType>
+</Q>
+<Q>
         <Question>三德歌是谁唱的啊?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
@@ -14,10 +18,6 @@
 <Q>
         <Question>蛇舞除了周轮唱的还有一个女的唱的是谁?</Question>
         <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>U这首歌什么时候出的</Question>
-        <AnswerType>Number</AnswerType>
 </Q>
 <Q>
         <Question>谁是唱蝴蝶的歌手</Question>
