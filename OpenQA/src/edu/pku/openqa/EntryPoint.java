@@ -33,9 +33,9 @@ public class EntryPoint {
 		XMLUtils.readXML(new File(input), qs);
 		ArrayList<Question> arr = qs.getQs();		
 		LOG.info("arr length: " + arr.size());
-		int begin = 2800;
-		for (int i = begin; i < arr.size(); ++i) {
-			Question q = arr.get(i);
+		int begin = 0;
+		int end = arr.size();
+		for (int i = begin; i <= end; ++i) {			
 			if (i > begin && i % 50 == 0) {
 				LOG.info("Crawled " + i + " pages.... sleep for 5 seconds...");
 				Thread.sleep(5000);
@@ -45,7 +45,10 @@ public class EntryPoint {
 				}
 				LOG.info("qs length: " + cur.getQs().size());
 				XMLUtils.writeXML(new File(output + "_baidu_" + (i / 50) + ".xml"), cur);
+//				break;
 			}
+			if (i == end) break;
+			Question q = arr.get(i);
 			q.setSummary(baidu.getSearchResult(q.getQuestion()));
 //			q.setSummary(google.getSearchResult(q.getQuestion()));
 		}

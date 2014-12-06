@@ -29,8 +29,9 @@ public class GoogleCrawler implements Crawler {
 	public ArrayList<String> getSearchResult(String query) {
 		// TODO Auto-generated method stub
 		ArrayList<String> result = new ArrayList<String>();
-		HttpClient httpClient = new HttpClient();
+		HttpClient httpClient = new HttpClient();		
 		try {
+			query = query.trim();
 			query = URLEncoder.encode(query, "UTF-8");
 		} catch (UnsupportedEncodingException e1) {
 			// TODO Auto-generated catch block
@@ -52,7 +53,7 @@ public class GoogleCrawler implements Crawler {
 	        }
 	        byte[] responseBody = getMethod.getResponseBody();
 	        String response = new String(responseBody, "UTF-8");
-	        LOG.debug("response data: " + response);
+	        LOG.info("response data: " + response);
 	        
 	        JSONObject json = new JSONObject(response);	
 	        JSONArray results = json.getJSONObject("responseData").getJSONArray("results");
@@ -67,7 +68,7 @@ public class GoogleCrawler implements Crawler {
 	            content = content.replaceAll("</b>", "");
             	content = content.replaceAll("\\.\\.\\.", "");
             	LOG.debug(content);            
-            	result.add(title + "¡£" + content);
+            	result.add(title + ":" + content);
         	}
         } catch (Exception e) {
         	LOG.warn("failed to get search result for: " + query);
