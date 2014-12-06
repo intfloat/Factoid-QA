@@ -30,7 +30,8 @@ public class BaiduCrawler implements Crawler {
     public ArrayList<String> getSearchResult(String query) {
         // TODO Auto-generated method stub
         ArrayList<String> result = new ArrayList<String>();
-        String url = "http://www.baidu.com/s?wd=" + query;
+        query = query.trim();
+        String url = "http://www.baidu.com/s?wd=" + query;        
         LOG.info("start to crawl webpage for " + query + "...");
         try {
             Document document = Jsoup.connect(url)
@@ -63,10 +64,12 @@ public class BaiduCrawler implements Crawler {
                     LOG.warn("abstract is empty");
                     continue;
                 }
-                result.add(title + "¡£" + snippet);       
+                result.add(title + ":" + snippet);
+//                LOG.info(title + ": " + snippet);
             }
         } catch (IOException e) {
             // TODO Auto-generated catch block
+//        	LOG.error(url);
             LOG.error("failed to get response for " + query);
         }
         

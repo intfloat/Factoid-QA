@@ -67,7 +67,7 @@ public final class XMLUtils {
             Element category = (Element) element.getElementsByTagName(CATEGORY).item(0);
             question.setCategory(category.getTextContent());
             qs.addQuestion(question);
-            LOG.info(question);
+//            LOG.info(question);
         }
         return true;
     }
@@ -101,7 +101,7 @@ public final class XMLUtils {
                 element.appendChild(summary);
             }
             root.appendChild(element);
-            LOG.info("write: " + q);
+//            LOG.info("write: " + q);
         }
         
         //output the xml content into certain file
