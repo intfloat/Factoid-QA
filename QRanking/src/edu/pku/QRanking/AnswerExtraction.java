@@ -86,7 +86,7 @@ public class AnswerExtraction {
 				newone = tool.segment(evidence);
 				new_evidence.evidence_content = newone;
 				new_evidence.tagged_evidence = tool.postag(newone);
-				new_evidence.score = 3/i;
+				new_evidence.score = 0;
 				i = i + 1;
 				question.evidences.add(new_evidence);
 			}

@@ -39,9 +39,9 @@ public class CombinationAnswerScorer implements AnswerScorer {
 		tmds.weight = 7;
 		tas.weight = 12;
 		ltas.weight = 10;
-	//	addCandidateAnswerScore(tfs);
-	//	addCandidateAnswerScore(tds);
-	//	addCandidateAnswerScore(tmds);
+		addCandidateAnswerScore(tfs);
+		addCandidateAnswerScore(tds);
+		addCandidateAnswerScore(tmds);
 		addCandidateAnswerScore(tas);
 		addCandidateAnswerScore(ltas);
 	}
