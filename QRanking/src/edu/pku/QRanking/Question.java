@@ -15,14 +15,15 @@ import edu.stanford.nlp.ling.TaggedWord;
 public class Question {
 
 	public QuestionType type;
+	public String id;
 	public List<String> title;
-	public ArrayList<TaggedWord> tagged_title = new ArrayList<>();
+	public ArrayList<TaggedWord> tagged_title = new ArrayList<TaggedWord>();
 	
-	public List<Evidence> evidences = new ArrayList<>();
+	public List<Evidence> evidences = new ArrayList<Evidence>();
 	
 	//these answers are belongs
-	public List<Answer> answers = new ArrayList<>();
+	public List<Answer> answers = new ArrayList<Answer>();
 	
-	public List<SynthesizedAnswer> synthesized_answers = new ArrayList<>();
+	public List<SynthesizedAnswer> synthesized_answers = new ArrayList<SynthesizedAnswer>();
 	
 }

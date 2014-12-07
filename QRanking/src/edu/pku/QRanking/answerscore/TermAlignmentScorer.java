@@ -43,10 +43,10 @@ public class TermAlignmentScorer implements AnswerScorer{
 				for (String word : origin_pattern) {
 					origin_pattern_string += word;
 				}
-		//		System.out.println("origin pattern:"+origin_pattern_string);
+				//System.out.println("origin pattern:"+origin_pattern_string);
 				
                 List<String> patterns = new ArrayList<String>();
-                patterns.add(origin_pattern_string);
+           //     patterns.add(origin_pattern_string);
                 StringBuilder str = new StringBuilder();
                 for (int t = 0; t < origin_pattern.size(); t++) {
                     str.append(origin_pattern.get(t));
@@ -60,6 +60,9 @@ public class TermAlignmentScorer implements AnswerScorer{
                 int length = 0;
                 for (String pattern : patterns) {
                     //LOG.debug("模式："+pattern);
+               // 	System.out.println("pattern:"+pattern);
+                	try
+                	{
                     Pattern p = Pattern.compile(pattern);
                     
                     String evidence_content_string = "";
@@ -74,6 +77,11 @@ public class TermAlignmentScorer implements AnswerScorer{
                         count++;
                         length += text.length();
                     }
+                	}catch(Exception e)
+                	{
+                		continue;
+                	}
+                	
                 }
 				
 				
