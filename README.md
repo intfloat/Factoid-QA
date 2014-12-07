@@ -30,8 +30,8 @@
 
     [Liang Wang](wangliangpeking@gmail.com)
 
-    [Qi Li](stomier@126.com)
+    [Qi Li](stormier@126.com)
 
-    [Yanyan Jia](empty for now)
+    [Yanyan Jia](516752364@qq.com)
 
-    [Lei Zhao](empty for now)
+    [Lei Zhao](zl398617869@163.com)
