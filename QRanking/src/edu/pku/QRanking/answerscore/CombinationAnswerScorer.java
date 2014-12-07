@@ -21,7 +21,7 @@ import edu.pku.QRanking.SynthesizedAnswer;
  */
 public class CombinationAnswerScorer implements AnswerScorer {
 
-	private final List<AnswerScorer> scorers = new ArrayList<>();
+	private final List<AnswerScorer> scorers = new ArrayList<AnswerScorer>();
 	float weight;
 
 	public void addCandidateAnswerScore(AnswerScorer scorer) {
@@ -34,11 +34,11 @@ public class CombinationAnswerScorer implements AnswerScorer {
 		TermMiniDistanceScorer tmds = new TermMiniDistanceScorer();
 		TermAlignmentScorer tas= new TermAlignmentScorer();
 		LooseTermAlignmentScorer ltas= new LooseTermAlignmentScorer();
-		tfs.weight = 1;
-		tds.weight = 5;
-		tmds.weight = 1;
+		tfs.weight = (float)0.6;
+		tds.weight = 7;
+		tmds.weight = 7;
 		tas.weight = 12;
-		ltas.weight = 8;
+		ltas.weight = 10;
 		addCandidateAnswerScore(tfs);
 		addCandidateAnswerScore(tds);
 		addCandidateAnswerScore(tmds);
@@ -48,15 +48,27 @@ public class CombinationAnswerScorer implements AnswerScorer {
 
 	@Override
 	public void score(Question question) {
-		List<Answer> cached = new ArrayList<>();
-		List<SynthesizedAnswer> for_merge = new ArrayList<>();
-		List<SynthesizedAnswer> synthesizedanswer = new ArrayList<>();
-		Map<String, Float> score_map= new HashMap<>();
-		
+		List<Answer> cached = new ArrayList<Answer>();
+		List<SynthesizedAnswer> for_merge = new ArrayList<SynthesizedAnswer>();
+		List<SynthesizedAnswer> synthesizedanswer = new ArrayList<SynthesizedAnswer>();
+		Map<String, Float> score_map= new HashMap<String, Float>();
 		for (Answer answer : question.answers) {
-			if (question.title.contains(answer.answer_content)) {
+			if(answer.answer_content.contains("百度")||answer.answer_content.contains("知道")||answer.answer_content.contains("文库")||answer.answer_content.contains("答案")||answer.answer_content.contains("原理")||answer.answer_content.contains("题库"))
+			{
 				cached.add(answer);
 				continue;
+			}
+			
+			for(String word:question.title)
+			{
+				if(word.equals("俄罗斯人")||answer.answer_content.equals("俄罗斯"))
+					System.out.println("word:"+word+"    answer:"+answer.answer_content);
+				
+				if(word.contains(answer.answer_content))
+				{
+					cached.add(answer);
+					break;
+				}
 			}
 		}
 		
@@ -123,7 +135,6 @@ public class CombinationAnswerScorer implements AnswerScorer {
 		// sort answers
 		Collections.sort(synthesizedanswer);
 		Collections.reverse(synthesizedanswer);
-		
 		question.synthesized_answers = synthesizedanswer;
 	}
 }

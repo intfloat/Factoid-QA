@@ -21,7 +21,7 @@ import edu.pku.QRanking.util.NLPTools;
  */
 
 public class AnswerExtraction {
-	List<Question> questions = new ArrayList<>();
+	List<Question> questions = new ArrayList<Question>();
 	AnswerSelector selector = new AnswerSelector();
 	CombinationEvidenceScorer evidenceScorer = new CombinationEvidenceScorer();
 	CombinationAnswerScorer answerScorer = new CombinationAnswerScorer();
@@ -36,7 +36,8 @@ public class AnswerExtraction {
 		List<String> newone;
 		for (Element element : elements) {
 			Question question = new Question();
-
+			
+			question.id = element.attr("id");
 			// get question
 			Elements subElements = element.select("q");
 			String title = subElements.get(0).text();
@@ -47,8 +48,20 @@ public class AnswerExtraction {
 			// get question type
 			subElements = element.select("category");
 			String type = subElements.get(0).text();
+			
+			if(type.equals("Person"))
+				question.type = QuestionType.PERSON_NAME;
+			else if(type.equals("Location"))
+				question.type = QuestionType.LOCATION_NAME;
+			else if(type.equals("Number"))
+				question.type = QuestionType.NUMBER;
+			else if(type.equals("Other"))
+				question.type = QuestionType.OTHER;
+			else
+				question.type = QuestionType.NULL;
+			/*
 			switch (type) {
-			case "People":
+			case "Person":
 				question.type = QuestionType.PERSON_NAME;
 				break;
 			case "Location":
@@ -63,9 +76,10 @@ public class AnswerExtraction {
 			default:
 				question.type = QuestionType.NULL;
 			}
-
+			 */
 			// get evidence
 			subElements = element.select("summary");
+			float i = 1;
 			for (Element subelement : subElements) {
 				Evidence new_evidence = new Evidence();
 				String evidence = subelement.text();
@@ -73,6 +87,7 @@ public class AnswerExtraction {
 				new_evidence.evidence_content = newone;
 				new_evidence.tagged_evidence = tool.postag(newone);
 				new_evidence.score = 0;
+				i = i + 1;
 				question.evidences.add(new_evidence);
 			}
 
@@ -95,20 +110,23 @@ public class AnswerExtraction {
 		}
 
 		// show answers
-		int i = 1;
 		File output = new File(outputFileName);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(output));
 		for (Question question : questions) {
-
-			writer.write(i + "\t" + question.synthesized_answers.get(0).answer
+			if (question.synthesized_answers.size() == 0)
+			{
+				writer.write(question.id + "\t" + " "
+						+"\n");
+			}
+			else
+			{
+			writer.write(question.id + "\t" + question.synthesized_answers.get(0).answer
 					+"\n");
 
 			for (SynthesizedAnswer answer : question.synthesized_answers) {
-				System.out.println(i + "\t" + answer.answer + " " + answer.score
-						+ "\n");
+				System.out.println(question.id + "\t" + answer.answer + " " + answer.score);
 			}
-
-			i++;
+			}
 		}
 		writer.flush();
 		writer.close();

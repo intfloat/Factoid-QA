@@ -59,6 +59,9 @@ public class LooseTermAlignmentScorer implements AnswerScorer{
                 int length = 0;
                 for (String pattern : patterns) {
                     //LOG.debug("模式："+pattern);
+           //     	System.out.println("lose_pattern:"+pattern);
+                	try
+                	{
                     Pattern p = Pattern.compile(pattern);
                     
                     String evidence_content_string = "";
@@ -73,6 +76,11 @@ public class LooseTermAlignmentScorer implements AnswerScorer{
                         count++;
                         length += text.length();
                     }
+                }catch(Exception e)
+            	{
+            		continue;
+            	}
+            	
                 }
 				
 				

@@ -22,8 +22,8 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 	@Override
 	public void score(Question question) {
 		for (Answer answer : question.answers) {
-			List<Integer> answer_positions = new ArrayList<>();
-			List<Integer> question_positions = new ArrayList<>();
+			List<Integer> answer_positions = new ArrayList<Integer>();
+			List<Integer> question_positions = new ArrayList<Integer>();
 
 			int i = 1;
 			for (String term : answer.evidence.evidence_content) {
@@ -34,13 +34,18 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 			}
 
 			// interrogative is not involed in calculation
+			/*
 			List<String> interrogative = new ArrayList<>();
 			interrogative.add("DT"); // 什么 哪
 			interrogative.add("PN"); // 哪里 谁
 			interrogative.add("AD"); // 多少 为什么
-
+			 */
 			for (TaggedWord term : question.tagged_title) {
+				/*
 				if (interrogative.contains(term.tag())) {
+					continue;
+				}*/
+				if (!term.tag().equals("NN")&&!term.tag().equals("NR")&&!term.tag().equals("VV")&&!term.tag().equals("FW")&&!term.tag().equals("JJ")&&!term.tag().equals("NT")&&!term.tag().equals("OD")) {
 					continue;
 				}
 				i = 1;

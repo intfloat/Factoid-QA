@@ -14,7 +14,7 @@ import edu.pku.QRanking.Question;
  */
 public class CombinationEvidenceScorer implements EvidenceScorer {
 
-	private final List<EvidenceScorer> scorers = new ArrayList<>();
+	private final List<EvidenceScorer> scorers = new ArrayList<EvidenceScorer>();
 	float weight;
 
 	public CombinationEvidenceScorer() {
