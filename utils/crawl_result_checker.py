@@ -39,8 +39,26 @@ def bad_checker(file):
     print '\nsummary for', number, 'questions missed.'
     return
 
+def merge_structured_data(file):
+    reader = open(file, 'r')
+    cnt = 0
+    cur = ''
+    for line in reader:
+        if cnt % 2 == 0:
+            cur = line.strip()
+            if not cur.endswith('?'):
+                cur += '?'
+        else:
+            cur += line.strip()
+            print cur
+            cur = ''
+        cnt += 1
+    return
+
 if __name__ == '__main__':
-    merger('../data/out_baidu_')
+    # merge_structured_data('../OpenQA/tmp.txt')
+    bad_checker('../data/baidu_crawler_data_v3.xml')
+    # merger('../data/out_baidu_')
     # for i in xrange(1, 301):
     #     name = '../data/out_baidu_' + str(i) + '.xml'
     #     print name

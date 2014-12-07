@@ -66,6 +66,13 @@ public final class XMLUtils {
             question.setQuestion(q.getTextContent());
             Element category = (Element) element.getElementsByTagName(CATEGORY).item(0);
             question.setCategory(category.getTextContent());
+            
+//          add summary information if it has
+            NodeList sm = element.getElementsByTagName(SUMMARY);
+            for (int j = 0; j < sm.getLength(); ++j)
+            	question.getSummary().add(sm.item(j).getTextContent());
+            
+//          insert this question into question set
             qs.addQuestion(question);
 //            LOG.info(question);
         }

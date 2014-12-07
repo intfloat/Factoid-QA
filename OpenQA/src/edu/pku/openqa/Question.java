@@ -22,7 +22,8 @@ public class Question {
 	 */
 	public Question() {
 		this.ID = -1;
-		this.query = this.summary = null;
+		this.summary = new ArrayList<String>();
+		this.query = null;
 		this.question = this.category = null;
 	}
 	
