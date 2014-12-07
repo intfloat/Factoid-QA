@@ -20,14 +20,16 @@ public class QAPairExtractor {
 	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		Scanner cin = new Scanner(new File("questions.txt"));
-		FileWriter writer = new FileWriter("pair_v3.txt");
+		Scanner cin = new Scanner(new File("add_questions.txt"));
+		FileWriter writer = new FileWriter("pair_v4.txt");
 		int cnt = 0;
 		while (cin.hasNextLine()) {
 			String line = cin.nextLine().trim();
+			line = line.replace("？", "?");
+			System.out.println(line);
 //			LOG.info(line);
 			if (!line.contains("?")) continue;
-			int pos = line.lastIndexOf("?");
+			int pos = line.lastIndexOf("?");			
 			String question = line.substring(0, pos + 1).trim();
 			int i = 0;
 			for (i = 0; i < question.length(); ++i) {
@@ -48,7 +50,7 @@ public class QAPairExtractor {
 //			LOG.info(question + " vs " + answer);
 		}
 		writer.flush();
-		System.out.println("found " + cnt + " <question, answer> pairs.");
+		System.out.println("haha found " + cnt + " <question, answer> pairs.");
 		return;
 	}
 
