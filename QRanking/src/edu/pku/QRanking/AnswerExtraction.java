@@ -28,14 +28,11 @@ public class AnswerExtraction {
 
 	public void extractAnswer(String inputFileName, String outputFileName)
 			throws Exception {
-		NLPTools tool = new NLPTools();
-
+		NLPTools.initalize();
 		File input = new File(inputFileName);
 		Document doc = Jsoup.parse(input, "UTF-8", "");
 		Elements elements = doc.select("QuestionSet > question");
 		List<String> newone;
-		long time1= System.currentTimeMillis();
-		System.out.println(new Date(time1));
 		for (Element element : elements) {
 			Question question = new Question();
 			question.id = element.attr("id");

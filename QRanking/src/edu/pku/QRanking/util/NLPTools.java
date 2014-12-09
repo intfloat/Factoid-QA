@@ -30,7 +30,7 @@ public class NLPTools {
 	// static private LexicalizedParser lp;
 	static private AbstractSequenceClassifier<CoreLabel> classifier;
 
-	static void initalize() throws Exception {
+	static public void initalize() throws Exception {
 		System.setOut(new PrintStream(System.out, true, "utf-8"));
 		props = new Properties();
 		props.setProperty("sighanCorporaDict", basedir);
