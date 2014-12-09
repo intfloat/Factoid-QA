@@ -21,7 +21,7 @@ public class AnswerSelector {
 		{
 			for(Summary evidence: question.summarys)
 			{
-				for(TaggedWord word:evidence.tagged_evidence)
+				for(TaggedWord word:evidence.tagged_summary)
 				{
 					if(word.tag().equals("NR"))
 					{
@@ -38,7 +38,7 @@ public class AnswerSelector {
 		{
 			for(Summary evidence: question.summarys)
 			{
-				for(TaggedWord word:evidence.tagged_evidence)
+				for(TaggedWord word:evidence.tagged_summary)
 				{
 					if(word.tag().equals("NR"))
 					{
@@ -55,7 +55,7 @@ public class AnswerSelector {
 		{
 			for(Summary evidence: question.summarys)
 			{
-				for(TaggedWord word:evidence.tagged_evidence)
+				for(TaggedWord word:evidence.tagged_summary)
 				{
 					if(word.tag().equals("NT")||word.tag().equals("CD"))
 					{
@@ -72,7 +72,7 @@ public class AnswerSelector {
 		{
 			for(Summary evidence: question.summarys)
 			{
-				for(TaggedWord word:evidence.tagged_evidence)
+				for(TaggedWord word:evidence.tagged_summary)
 				{
 					if(word.tag().equals("NR")||word.tag().equals("VV")||word.tag().equals("NN"))
 					{

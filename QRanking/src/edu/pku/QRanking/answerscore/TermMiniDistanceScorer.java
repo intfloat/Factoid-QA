@@ -26,7 +26,7 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 			List<Integer> question_positions = new ArrayList<Integer>();
 
 			int i = 1;
-			for (String term : answer.evidence.evidence_content) {
+			for (String term : answer.evidence.summary_content) {
 				if (term.equals(answer.answer_content)) {
 					answer_positions.add(i);
 				}
@@ -49,7 +49,7 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 					continue;
 				}
 				i = 1;
-				for (String term2 : answer.evidence.evidence_content) {
+				for (String term2 : answer.evidence.summary_content) {
 					if (term2.equals(term.word())) {
 						question_positions.add(i);
 					}

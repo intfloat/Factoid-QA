@@ -32,9 +32,9 @@ public class TermEmergeScorer implements EvidenceScorer {
 		for (Answer answer : question.answers) {
 			float score = 0;
 			for (String term : Terms) {
-				for (String evidence_term : answer.evidence.evidence_content)
+				for (String evidence_term : answer.evidence.summary_content)
 					if (term.equals(evidence_term))
-						score += 1.0/answer.evidence.evidence_content.size();
+						score += 1.0/answer.evidence.summary_content.size();
 			}
 			answer.evidence.score += weight*score;
 			System.out.println("Evidence Term Emerge score:" + answer.answer_content

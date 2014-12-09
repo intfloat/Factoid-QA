@@ -15,8 +15,8 @@ import edu.stanford.nlp.ling.TaggedWord;
 public class Summary {
 	public float score;
 	
-	public List<String> evidence_content;
-	public List<TaggedWord> tagged_evidence;
+	public List<String> summary_content;
+	public List<TaggedWord> tagged_summary;
 	
 	
 }
