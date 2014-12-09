@@ -9,7 +9,7 @@ import java.util.Map;
 
 import edu.pku.QRanking.Answer;
 import edu.pku.QRanking.Question;
-import edu.pku.QRanking.QuestionType;
+import edu.pku.QRanking.QuestionCategory;
 import edu.pku.QRanking.SynthesizedAnswer;
 
 /**
@@ -108,7 +108,7 @@ public class CombinationAnswerScorer implements AnswerScorer {
 		}
 		
 		//just for test ,for person name problems 厄尔诺·鲁比克 include 鲁毕克 so maybe we should merge them
-		if(question.type == QuestionType.PERSON_NAME)
+		if(question.category == QuestionCategory.PERSON_NAME)
 		{
 
 			for(SynthesizedAnswer sa:synthesizedanswer)

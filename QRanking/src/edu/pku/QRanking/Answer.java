@@ -12,7 +12,7 @@ import edu.stanford.nlp.ling.TaggedWord;
 public class Answer {
 public float score;
 
-public Evidence evidence;
+public Summary evidence;
 
 public String answer_content;
 public TaggedWord tagged_answer;

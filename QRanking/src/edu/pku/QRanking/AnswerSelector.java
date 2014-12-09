@@ -15,11 +15,11 @@ public class AnswerSelector {
 	
 	public void select(Question question)
 	{
-		switch(question.type)
+		switch(question.category)
 		{
 		case PERSON_NAME:
 		{
-			for(Evidence evidence: question.evidences)
+			for(Summary evidence: question.summarys)
 			{
 				for(TaggedWord word:evidence.tagged_evidence)
 				{
@@ -36,7 +36,7 @@ public class AnswerSelector {
 		}
 		case LOCATION_NAME:
 		{
-			for(Evidence evidence: question.evidences)
+			for(Summary evidence: question.summarys)
 			{
 				for(TaggedWord word:evidence.tagged_evidence)
 				{
@@ -53,7 +53,7 @@ public class AnswerSelector {
 		}
 		case NUMBER:
 		{
-			for(Evidence evidence: question.evidences)
+			for(Summary evidence: question.summarys)
 			{
 				for(TaggedWord word:evidence.tagged_evidence)
 				{
@@ -70,7 +70,7 @@ public class AnswerSelector {
 		}
 		case OTHER:
 		{
-			for(Evidence evidence: question.evidences)
+			for(Summary evidence: question.summarys)
 			{
 				for(TaggedWord word:evidence.tagged_evidence)
 				{

@@ -1,4 +1,4 @@
-package edu.pku.QRanking.evidencescore;
+package edu.pku.QRanking.summaryscore;
 
 import edu.pku.QRanking.Question;
 

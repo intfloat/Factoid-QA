@@ -12,7 +12,7 @@ import edu.stanford.nlp.ling.TaggedWord;
  * @email stormier@126.com
  * 
  */
-public class Evidence {
+public class Summary {
 	public float score;
 	
 	public List<String> evidence_content;

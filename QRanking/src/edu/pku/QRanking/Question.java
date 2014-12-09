@@ -14,12 +14,12 @@ import edu.stanford.nlp.ling.TaggedWord;
  */
 public class Question {
 
-	public QuestionType type;
+	public QuestionCategory category;
 	public String id;
 	public List<String> title;
 	public ArrayList<TaggedWord> tagged_title = new ArrayList<TaggedWord>();
 	
-	public List<Evidence> evidences = new ArrayList<Evidence>();
+	public List<Summary> summarys = new ArrayList<Summary>();
 	
 	//these answers are belongs
 	public List<Answer> answers = new ArrayList<Answer>();

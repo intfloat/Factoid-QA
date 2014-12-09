@@ -81,7 +81,7 @@ public class NLPTools {
 			sentence2.add(new Word(word));
 		}
 		ArrayList<TaggedWord> tSentence2 = tagger.tagSentence(sentence2);
-		System.out.println(Sentence.listToString(tSentence2, false));
+	//	System.out.println(Sentence.listToString(tSentence2, false));
 		return tSentence2;
 	}
 

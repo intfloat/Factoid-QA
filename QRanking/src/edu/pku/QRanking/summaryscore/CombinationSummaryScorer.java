@@ -1,4 +1,4 @@
-package edu.pku.QRanking.evidencescore;
+package edu.pku.QRanking.summaryscore;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,12 +12,12 @@ import edu.pku.QRanking.Question;
  * @email stormier@126.com
  * 
  */
-public class CombinationEvidenceScorer implements EvidenceScorer {
+public class CombinationSummaryScorer implements EvidenceScorer {
 
 	private final List<EvidenceScorer> scorers = new ArrayList<EvidenceScorer>();
 	float weight;
 
-	public CombinationEvidenceScorer() {
+	public CombinationSummaryScorer() {
 		BigramEmergeScorer bes = new BigramEmergeScorer();
 		SkipBigramEmergeScorer sbes = new SkipBigramEmergeScorer();
 		TermEmergeScorer tes = new TermEmergeScorer();
