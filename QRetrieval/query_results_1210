@@ -1,0 +1,121 @@
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;  
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.StringReader;  
+import java.io.Writer;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.apache.lucene.analysis.Analyzer;  
+import org.apache.lucene.analysis.TokenStream;  
+import org.apache.lucene.analysis.standard.StandardAnalyzer;  
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;  
+import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;  
+ 
+import org.apache.lucene.index.IndexReader;  
+import org.apache.lucene.index.Term;
+import org.apache.lucene.queryParser.MultiFieldQueryParser;
+import org.apache.lucene.queryParser.ParseException;  
+import org.apache.lucene.queryParser.QueryParser;  
+import org.apache.lucene.search.BooleanQuery;
+import org.apache.lucene.search.IndexSearcher;  
+import org.apache.lucene.search.PrefixQuery;
+import org.apache.lucene.search.Query;  
+import org.apache.lucene.search.BooleanClause; 
+import org.apache.lucene.search.BooleanClause.Occur;
+import org.apache.lucene.search.ScoreDoc;  
+import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.highlight.Fragmenter;
+import org.apache.lucene.search.highlight.Highlighter;  
+import org.apache.lucene.search.highlight.InvalidTokenOffsetsException;  
+import org.apache.lucene.search.highlight.QueryScorer;  
+import org.apache.lucene.search.highlight.SimpleFragmenter;
+import org.apache.lucene.store.Directory;  
+import org.apache.lucene.store.FSDirectory;  
+import org.apache.lucene.util.Version;  
+import org.wltea.analyzer.lucene.IKAnalyzer; 
+
+public class aa {  
+  
+    private static IndexSearcher isearcher = null;  
+
+    public static void query (String inputFileName, OutputStream string) throws IOException, ParseException, InvalidTokenOffsetsException { 
+    	int id=0;
+    	File input = new File(inputFileName);
+		Document doc = Jsoup.parse(input, "utf-8", "");
+		Elements elements = doc.select("QuestionSet > question");
+		Writer fw = new  OutputStreamWriter(string,"utf-8"); 
+		String s = "<QuestionSet>\r\n";    
+        fw.write(s,0,s.length());    
+        fw.flush();
+		for (Element element : elements) {
+			
+			id++;
+			s="<question id="+"\""+id+"\""+">"+"\r\n";
+			fw.write(s,0,s.length()); 
+			 fw.flush();
+			Elements subElements = element.select("q");
+			String title = subElements.get(0).text();
+			
+			s="<q>"+title+"</q>"+"\r\n";
+			fw.write(s,0,s.length());
+			 fw.flush();
+			subElements = element.select("category");
+			String category = subElements.get(0).text();
+			s="<category>"+category+"</category>"+"\r\n";
+			fw.write(s,0,s.length());
+			 fw.flush();
+			subElements = element.select("query");
+			
+			String query1 = subElements.get(0).text();
+			
+		//	search(query, outputFileName); 
+	    	 String index = "D:\\index-副本";         //搜索的索引路径  
+	    	// Directory directory=FSDirectory.open(new File(index));
+	         IndexReader ireader = IndexReader.open(FSDirectory.open(new File(index)));  
+	         // Now search the index:  
+	         IndexSearcher isearcher  = new IndexSearcher(ireader);  
+	         ScoreDoc[] hits = null;    
+	     
+	         Query query = null;  
+	         Analyzer analyzer = new IKAnalyzer();
+	  
+	        QueryParser parser = new QueryParser(Version.LUCENE_36,"body", analyzer);  
+	         query = parser.parse(query1); 
+	         
+	       hits = isearcher.search(query, null, 10).scoreDocs;  
+	          
+	        Highlighter hl = new Highlighter(new QueryScorer(query));  
+	         hl.setTextFragmenter(new SimpleFragmenter(300)); 
+	        System.out.println(query.toString());  
+	        System.out.println("找到:" + hits.length + " 个结果!");    
+	        
+	       // FileWriter fw1 = new FileWriter(outputFileName,true); 
+	        // Iterate through the results:  
+	        for (int i = 0; i < hits.length; i++) { 
+	        	org.apache.lucene.document.Document hitDoc = isearcher.doc(hits[i].doc);  
+	          TokenStream ts = analyzer.tokenStream("body", new StringReader(hitDoc.getValues("body")[0]));  
+	          String frament = hl.getBestFragment(ts, hitDoc.getValues("body")[0]);  
+	           s ="<summary>"+frament+"</summary>"+"\r\n";
+	          fw.write(s,0,s.length());    
+	          fw.flush();
+	    //      System.out.println(frament);  
+	        }  
+	         s ="</question>"+"\r\n";
+	        fw.write(s,0,s.length());    
+	        fw.flush();
+	      //  fw.close();
+		}
+     
+    }    
+    public static void main (String[] args) throws IOException, ParseException, InvalidTokenOffsetsException { 
+    	FileOutputStream fos = new FileOutputStream("stage3.xml");
+    	query("stage2_big.xml",fos);
+    	isearcher.close();
+    }
+}  
