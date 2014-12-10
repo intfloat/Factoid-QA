@@ -1893,7 +1893,7 @@
 </Q>
 <Q>
         <Question>谁知道公交公司的投诉热线</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>南拳妈妈什么时候出新专辑</Question>
@@ -3493,7 +3493,7 @@
 </Q>
 <Q>
         <Question>周杰伦什么时候出道的``怎么出道的```</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Number</AnswerType>
 </Q>
 <Q>
         <Question>求一个视频的背景音乐下载?地址是~悬赏10分</Question>
@@ -4325,7 +4325,7 @@
 </Q>
 <Q>
         <Question>林俊杰的歌迷名字叫什么</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>谁晓得一部关于三条蛇(龙)的电视剧呀?</Question>
@@ -7817,10 +7817,6 @@
 </Q>
 <Q>
         <Question>有谁知道歌手欢子是哪一年的呀?</Question>
-        <AnswerType>Number</AnswerType>
-</Q>
-<Q>
-        <Question>刘德华的出生带是哪</Question>
         <AnswerType>Number</AnswerType>
 </Q>
 <Q>
@@ -12341,7 +12337,7 @@
 </Q>
 <Q>
         <Question>FIR今年会出现在哪个演唱会</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>周杰伦5月1日的演唱会神秘嘉宾会是谁?</Question>
@@ -13881,7 +13877,7 @@
 </Q>
 <Q>
         <Question>谁知道刘若英的生日?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>张栋梁的新EP叫什么</Question>
@@ -16665,7 +16661,7 @@
 </Q>
 <Q>
         <Question>著名的“特洛伊之战”传说起因是双方为了争夺一个美女，请问这位美女叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>有史以来第一个活着亲眼看到自己的作品被收藏进卢浮宫的西班牙画家是谁?</Question>
@@ -16673,7 +16669,7 @@
 </Q>
 <Q>
         <Question>传说中开天辟地的上古人物叫做什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>中国神话传说中是哪位神用五色石头补的天?</Question>
@@ -16809,7 +16805,7 @@
 </Q>
 <Q>
         <Question>著名的旅游景点夏威夷位于哪个大洋中?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>世界上最大的沙漠叫什么名字?</Question>
@@ -16833,7 +16829,7 @@
 </Q>
 <Q>
         <Question>《智取威虎山》中经典台词”天王盖地虎“下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>”我挥一挥手，不带走一片云彩“是出自哪位诗人的《再别康桥》?</Question>
@@ -17121,11 +17117,11 @@
 </Q>
 <Q>
         <Question>歌曲《达坂城的姑娘》中“你要是嫁人，不要嫁给别人”，下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>中国麻将中，一种动物是代表的哪张牌?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>红星二锅头是中国哪个城市的特产?</Question>
@@ -17169,11 +17165,11 @@
 </Q>
 <Q>
         <Question>吴门四大才子俗称江南四大才子是指唐伯虎，文征明，徐祯卿和谁?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>俗话说，上有天堂，下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>苏堤春晓俗称苏公堤，是我国哪个湖的著名景观?</Question>
@@ -17449,15 +17445,11 @@
 </Q>
 <Q>
         <Question>网络用语“稀饭”是什么意思?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>年代经典歌曲，“岁月不知人间多少的忧伤”下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
-</Q>
-<Q>
-        <Question>年代经典歌曲，“岁月不知人间多少的忧伤”下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>中国电信的客服电话是多少?</Question>
@@ -18045,23 +18037,23 @@
 </Q>
 <Q>
         <Question>成语“送君千里”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“你从雪山走来，春潮是你的风采”出自哪首歌曲?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“风在吼，马在叫，黄河在咆哮，黄河在咆哮”出自哪部作品?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>社交名媛，也是某国际著名连锁酒店集团继承人的美国人叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>有“小甜甜”外号的美国流行天后叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>相传乾隆皇帝把“天下第一泉”美名给了位于山东的哪个泉?</Question>
@@ -18605,15 +18597,15 @@
 </Q>
 <Q>
         <Question>成语‘破釜沉舟’是哪个历史人物的典故?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>遇到强敌会以‘喷墨‘作为逃生方法的是什么海洋动物?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>俗话说的‘路遥知马力‘，下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>被称为“大郅”，第一个参加NBA赛事的中国球员是谁?</Question>
@@ -18621,7 +18613,7 @@
 </Q>
 <Q>
         <Question>丁俊晖参加的世界主流台球项目，又被称为“阻碍台球”的是哪种台球项目?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《射雕英雄传》中东邪黄药师居住在什么岛上?</Question>
@@ -19313,7 +19305,7 @@
 </Q>
 <Q>
         <Question>俗话说，没有什么工具就别揽瓷器活?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>汗蒸有排毒减肥等功效，是哪个亚洲国家的传统休闲项目?</Question>
@@ -19329,7 +19321,7 @@
 </Q>
 <Q>
         <Question>美剧《生活大爆炸》中，有强迫症和洁癖，智商高达187的天才物理学教叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>世界上人口最少的国家是?</Question>
@@ -19337,7 +19329,7 @@
 </Q>
 <Q>
         <Question>俗话说，吃一堑下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>比喻想要隐瞒掩饰，结果反而暴露是说此地无银多少两?</Question>
@@ -19481,23 +19473,23 @@
 </Q>
 <Q>
         <Question>“七仔”是周星驰哪部电影的卡通角色?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我们跟老人祝寿时的吉祥话：“福如东海”下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>童话大王郑渊洁笔下的角色中，开飞机的叫舒克，开坦克的叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>动画片《大力水手》中大力水手的老婆叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>我们通常所说的你今天尾巴是表示今天是你什么日子?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我们通常说“贵庚”时，是想知道对方的什么?</Question>
@@ -19673,11 +19665,11 @@
 </Q>
 <Q>
         <Question>我们通常形容显出破绽.暴露真相叫露出什么动物脚?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>古诗词“好雨知时节”的下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>地球自转一周约多少个小时?</Question>
@@ -19764,20 +19756,20 @@
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>从哈佛辍学，并创建了软件帝国微软公司的人是谁?    比尔?</Question>
+        <Question>从哈佛辍学，并创建了软件帝国微软公司的人是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>Facebook创始人马克?扎克伯格是哪个美国著名高校的辍学生?</Question>
+        <AnswerType>Location</AnswerType>
+</Q>
+<Q>
+        <Question>谚语“冰冻三尺”的下一句是?</Question>
         <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>谚语“冰冻三尺”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
-</Q>
-<Q>
-        <Question>谚语“冰冻三尺”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“苏30”战斗机是哪个欧洲国家的多用途战斗机?</Question>
@@ -19789,7 +19781,7 @@
 </Q>
 <Q>
         <Question>按照国际单位制质量的单位是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《星条旗永不落》是哪个国家的国歌?</Question>
@@ -19977,11 +19969,11 @@
 </Q>
 <Q>
         <Question>动画片《灌篮高手》中，湘北队中三分球神准的队员叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>“离离原上草”下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>现在山东省的区域是春秋时期的齐国和哪个国家?</Question>
@@ -20041,7 +20033,7 @@
 </Q>
 <Q>
         <Question>圣经故事中传说可以让世界上各种陆上生物躲避一场大洪水的大船叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>演唱了《乡恋》《难忘今宵》的著名歌唱艺术家是谁?</Question>
@@ -20061,7 +20053,7 @@
 </Q>
 <Q>
         <Question>陶晶莹的歌曲《姐姐妹妹站起来》中，“十个男人，七个傻，八个呆”，下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在我国哪个城市需要预先摇号才能获得购买小轿车并且上牌的资格?</Question>
@@ -20253,7 +20245,7 @@
 </Q>
 <Q>
         <Question>古诗“两岸猿声啼不住”下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>拍摄过电视剧《永不瞑目》《奋斗》《男人帮》等剧的是我国哪位导演?</Question>
@@ -20265,7 +20257,7 @@
 </Q>
 <Q>
         <Question>世界杯历史上第一次通过互射点球的方式决出冠军的比赛是巴西对哪支球队?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>迄今为止当选世界“足球先生”时最年轻的球星是谁?</Question>
@@ -20401,7 +20393,7 @@
 </Q>
 <Q>
         <Question>世界三大男高音指的是多明戈.卡雷拉斯和谁?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>由美国国家录音与科学学会举办的哪一个年度大型音乐评奖被誉为“音乐奥斯卡”?</Question>
@@ -20469,11 +20461,7 @@
 </Q>
 <Q>
         <Question>“冰冻三尺”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
-</Q>
-<Q>
-        <Question>“冰冻三尺”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>乌龙茶中的精品“大红袍”产自哪个省?</Question>
@@ -20721,7 +20709,7 @@
 </Q>
 <Q>
         <Question>俗话说“道高一尺”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>汽锅鸡以鸡肉滋嫩.汤汁鲜美.富于营养而广为流传，请问它是我国哪个省独有的高级风味菜?</Question>
@@ -20733,11 +20721,11 @@
 </Q>
 <Q>
         <Question>著名二胡曲《二泉映月》的作者是?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>我国古代“战国七雄”是指齐.楚.燕.韩.魏.秦和哪个国家?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>历史上的三国指的是魏国.蜀国和哪个国家?</Question>
@@ -20765,11 +20753,11 @@
 </Q>
 <Q>
         <Question>出自《增广贤文》，反映古代读书人专心学习，“两耳不闻窗外事”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>曾经和歌手张韶涵一同出演篮球偶像剧《MVP情人》的台湾男子组合是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>偶像剧《转角遇到爱》中与大S搭档，饰演“秦朗”这一角色的是哪位全能台湾男艺人?</Question>
@@ -20977,7 +20965,7 @@
 </Q>
 <Q>
         <Question>在荆轲刺秦王出发时所歌“风萧萧兮易水寒的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>位于美国回放，现在也常用来指代美国大片，是哪一个著名的影视旅游基地?</Question>
@@ -20985,11 +20973,11 @@
 </Q>
 <Q>
         <Question>位于纽约，美国戏剧和音乐剧的重要发扬地，也成了音乐剧的代名词是哪条著名街道?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>美国市曼哈顿一条重要的南北向干道，且与一款世界知名香水同名的街道叫什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>著名的香榭丽舍大街（爱丽舍田园大街）是位于欧洲的哪个城市?</Question>
@@ -21153,11 +21141,11 @@
 </Q>
 <Q>
         <Question>成语“养兵千日”的下半句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“虎门销烟”的清朝钦差大臣是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>清末“康梁变法”中的“康”指的是康有为，“梁”指的是谁?</Question>
@@ -21165,7 +21153,7 @@
 </Q>
 <Q>
         <Question>宋代诗人叶绍翁的诗词《游园不值》中“春色满园关不住”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>著名日本漫画《灌篮高手》的作者是哪位漫画家?</Question>
@@ -21325,7 +21313,7 @@
 </Q>
 <Q>
         <Question>《喜羊羊与灰太狼》中，灰太狼与红太郎的儿子叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>与郎朗齐名，第一位获得肖邦国际钢琴大赛冠军的中国钢琴家是谁?</Question>
@@ -21337,7 +21325,7 @@
 </Q>
 <Q>
         <Question>我们常说大户人家的小姐“大门不出”，下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>戊戌变法又被称作“康梁变法”，那么其中的“康”指的是谁?</Question>
@@ -21353,7 +21341,7 @@
 </Q>
 <Q>
         <Question>周星驰电影《功夫》中，元秋饰演的“猪笼城寨”的强势女房东叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>小说《鲁滨逊漂流记》中，鲁滨逊救下的野人叫什么?</Question>
@@ -21445,7 +21433,7 @@
 </Q>
 <Q>
         <Question>王之涣的诗歌《凉州词》中“羌笛何须怨杨柳”的下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“昔人已乘黄鹤去，此地空余黄鹤楼”出自哪位唐代诗人的作品?</Question>
@@ -21453,11 +21441,11 @@
 </Q>
 <Q>
         <Question>黄仁宇有一本书围绕公元1587的明代历史展开，这本书是?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>丁玲的哪部农村题材长篇小说荣获斯大林文学奖?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“都一处”是以做烧麦文明京城的百年老店，这个名字是由哪位清朝皇帝亲笔赐匾?</Question>
@@ -21613,11 +21601,11 @@
 </Q>
 <Q>
         <Question>俗话说“十年树木”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>俗话说“不鸣则已”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我们通常所称的“五湖四海”中，“五湖”是指：洞庭湖.太湖.巢湖.洪泽湖还有一个是?</Question>
@@ -21629,19 +21617,19 @@
 </Q>
 <Q>
         <Question>第一次鸦片战争期间在位的清王朝的皇帝年号是?</Question>
-        <AnswerType>Location</AnswerType>
-</Q>
-<Q>
-        <Question>与书法家柳公权并称为颜筋柳骨，颜体的创立人是哪一位唐朝书法家?</Question>
         <AnswerType>Other</AnswerType>
 </Q>
 <Q>
+        <Question>与书法家柳公权并称为颜筋柳骨，颜体的创立人是哪一位唐朝书法家?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
         <Question>我们经常用“两袖清风”这个词来比喻官员什么作风?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我们通常所说混日子是产：“做一天和尚”下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“叫化鸡”特色是采用泥土和什么植物的叶子包裹进行烧烤?</Question>
@@ -21657,7 +21645,7 @@
 </Q>
 <Q>
         <Question>被誉为“天下第一行书”的是晋代书法家王羲之的哪一幅作品?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>唐代三绝中，以书法著称的是谁的“狂草”?</Question>
@@ -21721,7 +21709,7 @@
 </Q>
 <Q>
         <Question>王昌龄的古诗“但使龙城飞将在”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>年北京奥运中国女子体操队队长，拥有以自己名字为跳马动作名的前中国女子体操运动员叫什么?</Question>
@@ -21741,11 +21729,11 @@
 </Q>
 <Q>
         <Question>《水浒传》中毒死武大郎，后被武松打死的是哪个恶霸?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>经典儿歌《哇哈哈》中的歌词：“我们的祖国是花园”下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《水浒传》讲的是哪个朝代的英雄故事?</Question>
@@ -21761,11 +21749,7 @@
 </Q>
 <Q>
         <Question>著名的书法字体“瘦金体”是由哪个皇帝所创?</Question>
-        <AnswerType>Other</AnswerType>
-</Q>
-<Q>
-        <Question>俗话说“笑一笑”怎么样?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>俗话说“笑一笑”怎么样?</Question>
@@ -21773,7 +21757,7 @@
 </Q>
 <Q>
         <Question>常言道“十年修得同船渡”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>古时称为“长安”.“京兆”的是我国哪个古都?</Question>
@@ -21805,11 +21789,11 @@
 </Q>
 <Q>
         <Question>名著《西游记》中的卷帘大将被贬到凡间之后成为了唐僧的哪个徒弟?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>名著《西游记》中西海龙王三太子经观音点化成为唐僧的什么坐骑?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>釜山.首尔.大邱是哪个国家的城市?</Question>
@@ -21821,7 +21805,7 @@
 </Q>
 <Q>
         <Question>贺知章的“不知细叶谁裁出”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>写下“多情自古伤离别”的婉约派代表性人物是北宋哪位大词人?</Question>
@@ -21853,23 +21837,23 @@
 </Q>
 <Q>
         <Question>民间传统中说“二月二”，怎么样?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“池塘边的榕树上，知了在声声叫着夏天”是罗大佑的哪首经典歌曲?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>俗话说“不怕一万”，下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>老虎.美洲豹.狮子都是属于哪一科的动物?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>刘文正演唱的胡适填词的歌词“我从山中来，带着什么草”?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《围城》《人?兽?鬼》的作者是哪位中国作家?</Question>
@@ -22029,7 +22013,7 @@
 </Q>
 <Q>
         <Question>谚语“智者千虑”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>担担面是哪个省的特色小吃?</Question>
@@ -22045,7 +22029,7 @@
 </Q>
 <Q>
         <Question>歇后语“十五个吊桶打水”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在辣椒中，哪种维生素含量最高?</Question>
@@ -22057,7 +22041,7 @@
 </Q>
 <Q>
         <Question>李商隐的诗句“身无彩凤双飞翼”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>小说《三国演义》中诸葛亮的老婆是谁?</Question>
@@ -22121,7 +22105,7 @@
 </Q>
 <Q>
         <Question>绕口令的基本功常说到“叫葡萄不吐葡萄皮”，下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>郑欣宜的妈妈是哪位已故有“开心果”之称的香港著名艺人?</Question>
@@ -22145,15 +22129,15 @@
 </Q>
 <Q>
         <Question>杜牧的《江南春》中，“南朝四百八十寺”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
-</Q>
-<Q>
-        <Question>挪威的首都是哪个城市?</Question>
         <AnswerType>Other</AnswerType>
 </Q>
 <Q>
-        <Question>沼气的主要成份是什么化学成份?</Question>
+        <Question>挪威的首都是哪个城市?</Question>
         <AnswerType>Location</AnswerType>
+</Q>
+<Q>
+        <Question>沼气的主要成份是什么化学成份?</Question>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我们一般会用哪三个字母来表示“重要人物”“贵宾”“高级会员”?</Question>
@@ -22197,7 +22181,7 @@
 </Q>
 <Q>
         <Question>宋代诗人僧志南的名句“沾衣欲湿杏花雨”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“其实地上本没有路，走的人多了，也便成了路”是哪位作家说的?</Question>
@@ -22213,11 +22197,11 @@
 </Q>
 <Q>
         <Question>出自孔子《论语》：“君子坦荡荡”下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>李煜的《虞美人》中：“问君能有几多愁”下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>年退役的湘籍羽毛球男子世界冠军是谁?</Question>
@@ -22477,7 +22461,7 @@
 </Q>
 <Q>
         <Question>《金太狼的幸福生活》中，李小璐饰演的是哪个角色?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>达喀尔拉力赛的举办地达喀尔在哪个非洲国家?</Question>
@@ -22577,19 +22561,19 @@
 </Q>
 <Q>
         <Question>有“魔兽”称号的德罗巴今年正式从英超切尔西转会至中超的哪只俱乐部?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>-2012赛季NBA美职篮总冠军是哪一只球队?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>李白的《送孟浩然之广陵》中“孤帆远影碧空尽”下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>近期，由陈坤.赵薇.周迅.杨幂主演的魔幻爱情故事电影是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《面包树上的女人》《永不永不说再见》是哪位香港著名言情小说家的代表作?</Question>
@@ -22629,11 +22613,11 @@
 </Q>
 <Q>
         <Question>玫瑰花属于什么科的植物?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>出自杜牧诗中“东风不与周郎便”的下一句是?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>现在韩国的首都是首尔，在没改名之前叫什么?</Question>
@@ -22661,15 +22645,15 @@
 </Q>
 <Q>
         <Question>出自王勃的诗句“落霞与孤鹜齐飞”的下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>李白的《将进酒》中“人生得意须尽欢”下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>清朝太高祖皇帝的名字是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>在电影《埃及艳后》中，这位美艳的埃及统治者最开始引诱了哪位罗马帝国的军事统帅?</Question>
@@ -22785,7 +22769,7 @@
 </Q>
 <Q>
         <Question>赵翼的诗句“江山代有才人出”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>英文字母中的“M”在汉语拼音中的发音是什么?</Question>
@@ -23121,7 +23105,7 @@
 </Q>
 <Q>
         <Question>中国古神话传说中发明钻木取火的是“三皇”之首的谁?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>年第二十一届奥运会是在加拿大的哪座城市举办?</Question>
@@ -23133,11 +23117,11 @@
 </Q>
 <Q>
         <Question>出自白居易《琵琶行》“轻拢慢捻抹复挑”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>出自毛泽东《长征》“金沙水拍云崖暧”的下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“她总是只留下电话号码，从不肯让我送她回家”这句歌词出自香港哪个团体的歌曲?</Question>
@@ -23184,19 +23168,19 @@
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>精选1.英超曼联队主教练，有“弗爵爷”之称的人是谁?</Question>
+        <Question>英超曼联队主教练，有“弗爵爷”之称的人是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>精选2.在《夺宝奇兵》冒险系列电影中担任男主角的好莱坞巨星叫?</Question>
-        <AnswerType>Location</AnswerType>
-</Q>
-<Q>
-        <Question>精选3.世界上最宽的瀑布是?</Question>
+        <Question>在《夺宝奇兵》冒险系列电影中担任男主角的好莱坞巨星叫?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>精选4.中国摇滚乐坛的张楚、窦唯以及哪位歌手并称为“魔岩三术”?</Question>
+        <Question>世界上最宽的瀑布是?</Question>
+        <AnswerType>Other</AnswerType>
+</Q>
+<Q>
+        <Question>中国摇滚乐坛的张楚、窦唯以及哪位歌手并称为“魔岩三术”?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
@@ -23209,7 +23193,7 @@
 </Q>
 <Q>
         <Question>王昌龄的诗句“洛阳亲友如相问”下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>化学方程式的书写中，我们通常用什么开关的符号表示需要“加热”?</Question>
@@ -23473,7 +23457,7 @@
 </Q>
 <Q>
         <Question>庄子的《秋水》里传说中的黄河之神叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>《三国演义》中，诸葛亮挥泪斩了哪位大将?</Question>
@@ -23617,11 +23601,7 @@
 </Q>
 <Q>
         <Question>俗话说“一朝被蛇咬”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
-</Q>
-<Q>
-        <Question>俗话说“一朝被蛇咬”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>乐器唢呐上有几个孔?</Question>
@@ -23721,11 +23701,11 @@
 </Q>
 <Q>
         <Question>俗话说“人有失手”下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“窃书不能算偷”这句话是鲁迅生生笔下的什么人物说的?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>电影《哈利波特》中霍格沃兹学校的主要采景地安尼克堡位于哪个国家?</Question>
@@ -23789,7 +23769,7 @@
 </Q>
 <Q>
         <Question>《曹刿论战》中曹刿分析战况说道：“一鼓作气，再而衰”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>长江最后注入我国哪个海?</Question>
@@ -23812,7 +23792,7 @@
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>名高等学府耶鲁大学位于哪个国家?</Question>
+        <Question>著名高等学府耶鲁大学位于哪个国家?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
@@ -23829,11 +23809,11 @@
 </Q>
 <Q>
         <Question>成语“人无千日好”的下一句?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>出自《孟子》的“生于忧患”，下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《倚天屠龙记》中使用千蛛万毒手的殷离是谁的女儿?</Question>
@@ -24069,11 +24049,7 @@
 </Q>
 <Q>
         <Question>当我们受人启发，恍然大悟时，常说“听君一席话”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
-</Q>
-<Q>
-        <Question>当我们受人启发，恍然大悟时，常说“听君一席话”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>日本的第一高峰时是最著名的活火山是哪一座?</Question>
@@ -24081,7 +24057,7 @@
 </Q>
 <Q>
         <Question>世界上哪个大洋的岛屿最多?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>我国著名”大昭寺“”小昭寺“位于西藏自治区的哪个城市?</Question>
@@ -24089,11 +24065,11 @@
 </Q>
 <Q>
         <Question>巴西著名足球运动员卡卡现在效力于西甲的那支球队?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>绰号”纳豆“的西班牙男子网球明星叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>羽泉和黄征在《奔跑》这首歌中的开篇唱到，他们以多少迈的速度奔跑，心情是自由自在?</Question>
@@ -24125,7 +24101,7 @@
 </Q>
 <Q>
         <Question>“人善被人欺”下一句?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>名著《三国演义》中，刘备在白帝城病危，将儿子刘禅托付给哪位大臣?</Question>
@@ -24134,10 +24110,6 @@
 <Q>
         <Question>《水浒传》中“拼命三郎”是谁?</Question>
         <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>电影《大话西游》中至尊宝对紫霞说，如果要给这份爱加上一个期限，希望是多长时间?</Question>
-        <AnswerType>Number</AnswerType>
 </Q>
 <Q>
         <Question>电影《大话西游》中至尊宝对紫霞说，如果要给这份爱加上一个期限，希望是多长时间?</Question>
@@ -24308,131 +24280,131 @@
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>２．表示投降时，人们举什么颜色的旗子?</Question>
+        <Question>表示投降时，人们举什么颜色的旗子?</Question>
         <AnswerType>Other</AnswerType>
 </Q>
 <Q>
-        <Question>５．李春波的经典代表歌曲中唱到。村里有个姑娘叫什么，长得好看又善良?</Question>
+        <Question>李春波的经典代表歌曲中唱到。村里有个姑娘叫什么，长得好看又善良?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>６．网络神曲《最炫民族风》的歌词“你是我心中最美的什么”?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>７．中国历史上第一个横版进攻打法的男单冠军，和刘国梁开启乒坛“双子星时代”的是哪位国手?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>８．网球运动中最古老和最具声望的赛事温布尔登网球公开赛是在哪个城市举办的?</Question>
-        <AnswerType>Location</AnswerType>
-</Q>
-<Q>
-        <Question>９．琉球群岛中最大的岛，也是二战结束后成为美军的军事基地的是日本什么岛?</Question>
-        <AnswerType>Location</AnswerType>
-</Q>
-<Q>
-        <Question>１０．位于奥地利，有“音乐之都”美誉的是哪个城市?</Question>
-        <AnswerType>Location</AnswerType>
-</Q>
-<Q>
-        <Question>１１．比喻不得志、运势低落“龙游浅水遭虾戏”下一句是什么?</Question>
+        <Question>网络神曲《最炫民族风》的歌词“你是我心中最美的什么”?</Question>
         <AnswerType>Other</AnswerType>
 </Q>
 <Q>
-        <Question>１２．代表作有《一封陌生女人的来信》的作者茨威格是哪个国家的人?</Question>
+        <Question>中国历史上第一个横版进攻打法的男单冠军，和刘国梁开启乒坛“双子星时代”的是哪位国手?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>网球运动中最古老和最具声望的赛事温布尔登网球公开赛是在哪个城市举办的?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>１３．“棒棒”是我国哪个城市对“挑夫”的别称?</Question>
+        <Question>琉球群岛中最大的岛，也是二战结束后成为美军的军事基地的是日本什么岛?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>１４．被列入世界文化遗产的西递、宏村两处古民居是我国哪个省份的旅游景点?</Question>
+        <Question>位于奥地利，有“音乐之都”美誉的是哪个城市?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>１５．２０１１年法网决赛中，李娜击败了哪位意大利选手，成为首位夺得大满贯赛事单打冠军头衔的亚洲选手?　　佛朗西斯卡?</Question>
-        <AnswerType>Person</AnswerType>
+        <Question>比喻不得志、运势低落“龙游浅水遭虾戏”下一句是什么?</Question>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
-        <Question>１６.被公认为史上最成功的美国高尔夫球手之一，绰号为“老虎”的人是谁?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>１７.在神舟九号航天院中，担任指令长的航天员是谁?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>１８.在神舟九号宇航员中，操作飞船与天宫一号手动对接的航天员是谁?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>１９.把丧子之痛写进歌曲《ｔｅａｒｓ　ｉｎ　ｈｅａｖｅｎ》，被公认为有史以来最伟大的吉他手之一的是谁?　　埃里克?帕特里克?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>２０.代表作有《ｊｕｓｔ　ｔｈｅ　ｗａｙ　ｙｏｕ　ａｒｅ》，被称为“火星哥”的现金那位美国流行歌手?　　布鲁诺?</Question>
+        <Question>代表作有《一封陌生女人的来信》的作者茨威格是哪个国家的人?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>２.我们通常用欧洲的那个海形容人的头顶的头发稀疏?</Question>
+        <Question>“棒棒”是我国哪个城市对“挑夫”的别称?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>４.《三国演义。中因为骄傲轻敌，大意失荆州的蔬果将领是谁?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>５.歌词“一波还未平息，一波又来侵袭，茫茫人海狂风暴雨”出自任贤齐的那首经典歌曲?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>６.“他们说人生一场戏，又何必太认真”这首《戏梦》是哪位歌手演唱的?</Question>
-        <AnswerType>Person</AnswerType>
-</Q>
-<Q>
-        <Question>８.英超有一支著名球队被俄罗斯大亨阿布拉莫维奇收购，这支球队叫什么?</Question>
+        <Question>被列入世界文化遗产的西递、宏村两处古民居是我国哪个省份的旅游景点?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>９.外号“小胖老师”，创作了《征服》《梦醒了》《旋木》的是哪位台湾著名制作人?</Question>
+        <Question>２０１１年法网决赛中，李娜击败了哪位意大利选手，成为首位夺得大满贯赛事单打冠军头衔的亚洲选手?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>１０.２００９年解散的知名组合“花儿乐队”曾经的主唱是谁?</Question>
+        <Question>被公认为史上最成功的美国高尔夫球手之一，绰号为“老虎”的人是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>１１.电影《诺丁山》是茱莉亚?罗伯茨和哪位英国男演员共同主演的?　　休?</Question>
+        <Question>在神舟九号航天院中，担任指令长的航天员是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>１２.在电影《沉默的羔羊》中出神入化地诠释了食人魔的是哪位演员?　　安东尼?</Question>
+        <Question>在神舟九号宇航员中，操作飞船与天宫一号手动对接的航天员是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>１３.港台知名影星陈小春的现任妻子是哪位知名女艺人?</Question>
+        <Question>把丧子之痛写进歌曲《ｔｅａｒｓ　ｉｎ　ｈｅａｖｅｎ》，被公认为有史以来最伟大的吉他手之一的是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>１４.张克帆原来是台湾那个流行组合的主唱?</Question>
+        <Question>代表作有《ｊｕｓｔ　ｔｈｅ　ｗａｙ　ｙｏｕ　ａｒｅ》，被称为“火星哥”的现金那位美国流行歌手?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>１.中国最大的沿海群岛是位于浙江省的那个群岛?</Question>
+        <Question>我们通常用欧洲的那个海形容人的头顶的头发稀疏?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>２.汉武帝时期抗击匈奴的名将，也是霍去病舅舅的人是谁?</Question>
+        <Question>《三国演义。中因为骄傲轻敌，大意失荆州的蔬果将领是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>４.素有“中国第一高”之称的著名女排运动员是谁?</Question>
+        <Question>歌词“一波还未平息，一波又来侵袭，茫茫人海狂风暴雨”出自任贤齐的那首经典歌曲?</Question>
+        <AnswerType>Other</AnswerType>
+</Q>
+<Q>
+        <Question>“他们说人生一场戏，又何必太认真”这首《戏梦》是哪位歌手演唱的?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>５.著名导演希区柯克的御用女演员，之后又成为摩纳哥王妃的美国奥斯卡影后是谁?　　格蕾丝?</Question>
+        <Question>英超有一支著名球队被俄罗斯大亨阿布拉莫维奇收购，这支球队叫什么?</Question>
+        <AnswerType>Other</AnswerType>
+</Q>
+<Q>
+        <Question>外号“小胖老师”，创作了《征服》《梦醒了》《旋木》的是哪位台湾著名制作人?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>２００９年解散的知名组合“花儿乐队”曾经的主唱是谁?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>电影《诺丁山》是茱莉亚?罗伯茨和哪位英国男演员共同主演的?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>在电影《沉默的羔羊》中出神入化地诠释了食人魔的是哪位演员?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>港台知名影星陈小春的现任妻子是哪位知名女艺人?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>张克帆原来是台湾那个流行组合的主唱?</Question>
+        <AnswerType>Other</AnswerType>
+</Q>
+<Q>
+        <Question>中国最大的沿海群岛是位于浙江省的那个群岛?</Question>
+        <AnswerType>Location</AnswerType>
+</Q>
+<Q>
+        <Question>汉武帝时期抗击匈奴的名将，也是霍去病舅舅的人是谁?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>素有“中国第一高”之称的著名女排运动员是谁?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>著名导演希区柯克的御用女演员，之后又成为摩纳哥王妃的美国奥斯卡影后是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
@@ -24677,7 +24649,7 @@
 </Q>
 <Q>
         <Question>李白的《月下独酌》中“举杯邀明月”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>位于美国中部，别名“汽车之城”的是哪座城市?</Question>
@@ -24809,15 +24781,11 @@
 </Q>
 <Q>
         <Question>《封神榜》中，杨戬是我们常说的哪个有三只眼的神仙?</Question>
+        <AnswerType>Person</AnswerType>
+</Q>
+<Q>
+        <Question>俗话说，台上三分钟，下一句是什么?</Question>
         <AnswerType>Other</AnswerType>
-</Q>
-<Q>
-        <Question>俗话说，台上三分钟，下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
-</Q>
-<Q>
-        <Question>俗话说，台上三分钟，下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
 </Q>
 <Q>
         <Question>素有“铁娘子”之称的英国第一位女首相是什么夫人?</Question>
@@ -24833,11 +24801,11 @@
 </Q>
 <Q>
         <Question>俗语“一回生”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>古人在结拜时常说，不求同年同月生，下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>有“马政委”之称，现效力于北京队前NBA球星是谁?</Question>
@@ -24977,7 +24945,7 @@
 </Q>
 <Q>
         <Question>陈奕迅的哪首歌歌词由65首歌名组成，第一句就包含了《我》《以为》《用心良苦》三个歌名?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《分开旅行》、《音浪》是哪位台湾歌手的代表作?</Question>
@@ -25277,7 +25245,7 @@
 </Q>
 <Q>
         <Question>《木兰辞》中“小弟闻姊来”的下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>王家卫电影《重庆森林》中。始终带着墨镜和假发的女人是由谁扮演的?</Question>
@@ -25461,7 +25429,7 @@
 </Q>
 <Q>
         <Question>宋代晏殊的词《浣溪沙》中，“无可奈何花落去”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>被称为“核弹头”的乌克兰足球明星是谁?</Question>
@@ -25561,7 +25529,7 @@
 </Q>
 <Q>
         <Question>唐代诗人张继的名诗《枫桥夜泊》中“月落乌啼霜满天”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>克洛泽、厄齐尔、拉姆是哪个国家的著名足球运动员?</Question>
@@ -25633,7 +25601,7 @@
 </Q>
 <Q>
         <Question>俗话说，“一不做”，下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>世界上第一张＊＊＊于1915年起源于哪个国家?</Question>
@@ -25645,7 +25613,7 @@
 </Q>
 <Q>
         <Question>林升的诗句“山外青山楼外楼”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我国跨越经度最多的是哪一个省份?</Question>
@@ -25989,7 +25957,7 @@
 </Q>
 <Q>
         <Question>名著《水浒传》中，高俅的养子，因贪图林冲妻子美色而设计陷害林冲的人叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>古代文学理论著作《文心雕龙》是哪位南朝文学理论家的著作?</Question>
@@ -26001,11 +25969,11 @@
 </Q>
 <Q>
         <Question>李贺的诗句“吴丝蜀桐张高秋”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“哑巴吃什么有苦说不出”比喻有苦难言?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>据第六次人口普查结果，我国人口数量最多的少数民族自治区是哪一个?</Question>
@@ -26081,7 +26049,7 @@
 </Q>
 <Q>
         <Question>李煜的《相见欢》中“剪不断，理还乱，是离愁”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>获得2012年伦敦奥运会首枚金牌的中国射击运动员是谁?</Question>
@@ -26289,7 +26257,7 @@
 </Q>
 <Q>
         <Question>张继的《枫桥夜泊》中，月落乌啼霜满天的下一句是?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>电影《马达加斯加3》讲述的是一群动物逃出非洲想要回到哪个城市的故事?</Question>
@@ -26517,7 +26485,7 @@
 </Q>
 <Q>
         <Question>李贺《雁门太守行》中，黑云压城城欲摧的下一句是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>有着“冰王子”称号的著名荷兰前国脚是谁?</Question>
@@ -27245,15 +27213,15 @@
 </Q>
 <Q>
         <Question>德国最大的金融中心在哪个城市?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>人们常说的“盲肠炎”其实是人体哪个器官的急性炎症?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>歌曲《我爱北京天安门》中，“我爱北京天安门”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>被称为“榕城”的是福建省哪个城市?</Question>
@@ -27445,7 +27413,7 @@
 </Q>
 <Q>
         <Question>李清照的《如梦令》中，“争渡，争渡”下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在2012年伦敦奥运会上输给了李雪芮，获得羽毛球女单亚军的是我国哪位球员?</Question>
@@ -27613,11 +27581,11 @@
 </Q>
 <Q>
         <Question>现存世界上最早的有确切日期的雕版印品是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>other</AnswerType>
 </Q>
 <Q>
         <Question>我们经常在各项体育运动会上都有的标语是“友谊第一”下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>钟表上显示的时间为3点整，时针与分钟形成的夹角为多少度?</Question>
@@ -27633,7 +27601,7 @@
 </Q>
 <Q>
         <Question>泰国被称为“安达曼一颗明珠”的著名旅游胜地是哪个海岛?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>夏季奥运会开幕式代表团永远第一个入场的是哪个国家?</Question>
@@ -27645,7 +27613,7 @@
 </Q>
 <Q>
         <Question>在古罗马神话中，掌管爱与美的女神是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>《套中人》《小公务员之死》的作者是哪位著名讽刺小说家?</Question>
@@ -27857,7 +27825,7 @@
 </Q>
 <Q>
         <Question>荀子的《劝学》中，“骐骥一跃”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在张艺谋拍摄的影片《有话好好说》中饰演“安红”的是我国内地哪位女明星?</Question>
@@ -27932,11 +27900,11 @@
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>被称为“光头裁判”的是意大利哪位著名的足球裁判?  皮埃路易吉?</Question>
+        <Question>被称为“光头裁判”的是意大利哪位著名的足球裁判?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>年NBA的状元秀，被称为“浓眉哥”的是哪位球星?  安东尼?</Question>
+        <Question>年NBA的状元秀，被称为“浓眉哥”的是哪位球星?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
@@ -27945,7 +27913,7 @@
 </Q>
 <Q>
         <Question>俗话说“聪明一世”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>电影《天下无贼》中，由葛优主演的头号反派人物，一生气后果就会很严重的人物叫什么名字?</Question>
@@ -28061,11 +28029,11 @@
 </Q>
 <Q>
         <Question>唐代诗人王维的《送元二使安西》中“劝君更尽一杯酒”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>王安石《梅花》当中的诗句“墙角数枝梅”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>歌曲《囚鸟》的演唱者是哪位著名女歌手?</Question>
@@ -28229,7 +28197,7 @@
 </Q>
 <Q>
         <Question>白居易的《钱塘湖春行》中，“乱花渐欲迷人眼”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《女史箴图》是东晋哪位著名画家所画?</Question>
@@ -28305,11 +28273,11 @@
 </Q>
 <Q>
         <Question>俗话说“普天之下”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>形容团结一致，共渡难关，我们常说“一方有难”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>电视剧《新白娘子＊＊》中白素贞用什么火烧退了前来收取许仙魂魄的黑白无常?</Question>
@@ -28437,11 +28405,11 @@
 </Q>
 <Q>
         <Question>我国第一座地热发电站位于西藏的哪一个地方?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>由张信哲演唱，用作动画版《宝莲灯》片尾曲的是哪首歌?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>演唱了《生如夏花》《白桦林》的内地男歌手是谁?</Question>
@@ -28449,7 +28417,7 @@
 </Q>
 <Q>
         <Question>辛弃疾的诗句“稻花香里说丰年”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>歌曲《新鸳鸯蝴蝶梦》中，“抽刀断水水更流，举杯消愁愁更愁”出自谁的诗句?</Question>
@@ -28461,11 +28429,11 @@
 </Q>
 <Q>
         <Question>蒙古国的首都是哪里?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>电影《暮光之城》中饰演女主角伊莎贝拉。斯旺的女演员叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>出演《小情人》《小叛军》的，曾经担任过美国驻加纳大使的是美国著名童星是谁?</Question>
@@ -28489,7 +28457,7 @@
 </Q>
 <Q>
         <Question>汉乐府诗《江南》中，“江南可采莲”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>清朝慈禧太后曾是哪位皇帝的妃子?</Question>
@@ -28521,7 +28489,7 @@
 </Q>
 <Q>
         <Question>《巴黎圣母院》中被敲钟人卡西莫多救起的吉普赛少女叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>比喻双方平分，我们常说二一添作几?</Question>
@@ -28536,12 +28504,12 @@
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>NBA名人堂中，有“天钩”绰号的湖人队＊＊巨星是?</Question>
-        <AnswerType>Location</AnswerType>
+        <Question>NBA名人堂中，有“天钩”绰号的湖人队巨星是?</Question>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>曾有“狼王”称号，现效力于NBA凯尔特人队的球星是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>二战时期，美军以少胜多，成为太平洋战区转折点的是哪一场战役?</Question>
@@ -28572,28 +28540,28 @@
         <AnswerType>Other</AnswerType>
 </Q>
 <Q>
-        <Question>第1题：发明了“她”字的近代中国著名语言学家是谁?</Question>
+        <Question>发明了“她”字的近代中国著名语言学家是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>第3题：世界上落差最大的“天使”瀑布，位于南美洲哪个国家?</Question>
+        <Question>世界上落差最大的“天使”瀑布，位于南美洲哪个国家?</Question>
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>第4题：西甲皇家马德里队中绰号为“天使”的阿根廷前锋球员是谁?</Question>
+        <Question>西甲皇家马德里队中绰号为“天使”的阿根廷前锋球员是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>武侠剧中，人物在被死亡要挟时常说“要钱没有”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>湖水中的“湖”是什么结构的汉字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“夜夜想起妈妈的话”是由甄妮演唱的哪首歌曲?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>港剧《怒火街头》中律师罗力亚的扮演者是哪位著名男演员?</Question>
@@ -28961,11 +28929,11 @@
 </Q>
 <Q>
         <Question>杨晨转会德国法兰克福队踢球前，是国内哪支足球队俱乐部的球员?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>王维《山居秋暝》中“随意春芳歇”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>分数四分之一换算成小数是多少?</Question>
@@ -29049,7 +29017,7 @@
 </Q>
 <Q>
         <Question>古龙小说《七种武器》中的第二种，被称为“最成功的暗器”的是哪一种武器?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《神雕侠侣》中，杨过在全镇教学武拜的师傅是谁?</Question>
@@ -29057,7 +29025,7 @@
 </Q>
 <Q>
         <Question>东欧国家罗马利亚的首都是哪个有“欢乐之城”美誉的城市?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>以发行邮票闻名于世，夹在瑞士与奥地利之间的弹丸小国叫什么?</Question>
@@ -29065,11 +29033,11 @@
 </Q>
 <Q>
         <Question>唐代诗人孟郊的《游子吟》中“谁言寸草心”得下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>王勃《送杜少府之任蜀》中“城阙辅三秦”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我国对世界杯足球赛的第一次转播时的男解说员是?</Question>
@@ -29093,7 +29061,7 @@
 </Q>
 <Q>
         <Question>奥运会女子体操比赛的项目是自由操、跳马、高低杠和什么项目组成?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“香山红叶”是我国哪个城市的著名风景?</Question>
@@ -29401,7 +29369,7 @@
 </Q>
 <Q>
         <Question>鲁迅的《狂人日记》第一次发表在哪本刊物上?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>西方人认为哪一个数字因和“星期五”生命时会发生不好的事而被忌讳?</Question>
@@ -29413,15 +29381,15 @@
 </Q>
 <Q>
         <Question>清代钱鹤滩的《明日歌》中“明日复明日”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>金庸小说中的“降龙十八掌”的第一式叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>全家老小合拍的相片常被称为什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>演员在拍摄过程中出现失误或笑场而不能达到最付款效果的镜头，常用哪两个英文字母来表示?</Question>
@@ -29569,15 +29537,15 @@
 </Q>
 <Q>
         <Question>李商隐的《夜雨寄北》，“君问归来未有期”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“宝剑锋从磨砺出”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>清朝“八旗”中的上三旗是正黄旗，正白旗和什么旗?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>年，恭亲王奕訢与慈禧太后合谋发动哪一场政变，成功夺取了政权?</Question>
@@ -29585,7 +29553,7 @@
 </Q>
 <Q>
         <Question>曾经的NBA“小牛队三剑客”是诺维茨基、芬利和哪一位球星?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>以左右开弓和独特的杆法著称，绰号“火箭”的英国斯诺克球手是谁?罗尼?</Question>
@@ -29861,7 +29829,7 @@
 </Q>
 <Q>
         <Question>周华健的歌曲《花心》中，“春去春会来”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>歌词“多少人曾爱慕你年轻时的容颜，可知谁愿岁月的变迁”出自哪位内地组合的歌曲《一生有你》?</Question>
@@ -29949,7 +29917,7 @@
 </Q>
 <Q>
         <Question>古诗“借问酒家何处有”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>内地电影《茉莉花开》中，茉、莉、花三个角色都是哪位内地女星扮演的?</Question>
@@ -29957,7 +29925,7 @@
 </Q>
 <Q>
         <Question>大人国、小人国、飞岛国是哪部世界名著描绘的环境?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>著名的啤酒品牌喜力创始于哪个欧洲国家?</Question>
@@ -30053,7 +30021,7 @@
 </Q>
 <Q>
         <Question>我国四大名亭分别是湖心亭、醉翁亭、爱晚亭和哪个亭?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在鸿门宴上多次示意项羽杀掉刘邦，又指使项庄舞剑进行行刺的谋士是谁?</Question>
@@ -30069,7 +30037,7 @@
 </Q>
 <Q>
         <Question>辛弃疾《破阵子》中，“醉里挑灯看剑”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>电影《大魔术师》中饰演魔术师张贤的是哪位影帝级男演员?</Question>
@@ -30081,7 +30049,7 @@
 </Q>
 <Q>
         <Question>俗话说“躲得过初一”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>英语中我们常用AM表示上午，那么哪两个字母表示下午?</Question>
@@ -30257,11 +30225,11 @@
 </Q>
 <Q>
         <Question>我们常用身怀什么来形容女子有孕?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>中国古代的五行是指的哪五行?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我国地支的排列顺序中，“子丑”后面是哪两个?</Question>
@@ -30273,7 +30241,7 @@
 </Q>
 <Q>
         <Question>出自《庄子.让玉》中，“日出而作”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>世界上出产黄金最多的国家是非洲的哪个国家?</Question>
@@ -30289,7 +30257,7 @@
 </Q>
 <Q>
         <Question>获得欧洲冠军杯次数最多的是西甲的哪支球队?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>周星驰电影《九品芝麻官》中，饰演捕头“豹子头”的是哪个香港影星?</Question>
@@ -30361,7 +30329,7 @@
 </Q>
 <Q>
         <Question>“外争国权，内惩国贼”是哪次近代革命运动的口号?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>年中国男足与法国男足热身赛中，中国哪位球员的犯规造成了法国球员西塞腿骨骨折?</Question>
@@ -30377,7 +30345,7 @@
 </Q>
 <Q>
         <Question>北岛的诗“卑鄙是卑鄙者的通行证”的下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>清朝紫禁城中专为皇帝皇后准备食物的厨房，被称为什么房?</Question>
@@ -30393,7 +30361,7 @@
 </Q>
 <Q>
         <Question>“天地玄黄，宇宙洪荒”是出自我国哪本蒙学读物的句子?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“洛阳亲友如相问，一片冰心在玉壶”是晚唐哪位著名边塞诗人的诗句?</Question>
@@ -30545,7 +30513,7 @@
 </Q>
 <Q>
         <Question>岳飞的词《满江红.怒发冲冠》中，“待回头”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“小李飞刀成绝响，人间不见楚留香”是对哪位武侠小说家的挽联?</Question>
@@ -30561,7 +30529,7 @@
 </Q>
 <Q>
         <Question>罗曼罗兰所著的《名人传》中的三位名人分别是贝多芬，托尔斯泰和谁?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>我国明清时期的“京师”是现在中国的哪个城市?</Question>
@@ -30705,7 +30673,7 @@
 </Q>
 <Q>
         <Question>俗话说“人中有吕布”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>明太祖朱元璋是凤阳人，凤阳在今天的哪个省?</Question>
@@ -31001,7 +30969,7 @@
 </Q>
 <Q>
         <Question>王安石的诗歌《元日》：“爆竹声中一岁除”下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>刘禹锡诗句“旧时王谢堂前燕”中的王指的是东晋的哪个人?</Question>
@@ -31013,7 +30981,7 @@
 </Q>
 <Q>
         <Question>斯诺克中75年出生，被誉为75三杰的是马克威廉姆斯，希金斯和谁?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>NBA现任总裁是谁?</Question>
@@ -31057,7 +31025,7 @@
 </Q>
 <Q>
         <Question>西班牙著名足球明星劳尔职业生涯效力时间最长是哪一支球队?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>二战时期，美军以少胜多，成为二战太平洋战区转折点的是哪一场战役?</Question>
@@ -31065,7 +31033,7 @@
 </Q>
 <Q>
         <Question>统一各部，建立契丹国首领是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>李少红导演的新版《红楼梦》里面，晴雯的扮演者是谁?</Question>
@@ -31073,7 +31041,7 @@
 </Q>
 <Q>
         <Question>清代魏子安的《花月痕》中,“一失足成千古恨”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>名著《红楼梦》中怡红院是哪位男主角的住所?</Question>
@@ -31081,7 +31049,7 @@
 </Q>
 <Q>
         <Question>名著《西游记》中平顶山莲花洞的两个妖怪是金角大王和谁?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>世界上最小的岛国，以出产鸟粪而闻名的是哪个国家?</Question>
@@ -31133,31 +31101,31 @@
 </Q>
 <Q>
         <Question>美国历史上第一所高等学府是什么?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>周恩来的母校是天津哪一所高等学府?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>陆游诗《示儿》中，“王师北定中原日”下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>出自辛弃疾《西江月》，“七八个星天外”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>被誉为奥地利“第二国歌”的是小约翰施特劳斯的哪部作品?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>有摇滚乐之王美誉的美国歌手“猫王”全名是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>被誉为数学界皇冠上的明珠是什么猜想?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>周杰伦歌曲《龙卷风》的作词人是哪个著名台湾女艺人?</Question>
@@ -31269,7 +31237,7 @@
 </Q>
 <Q>
         <Question>李商隐的名诗“长海月明珠有泪”的下一句?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>主演了《心灵捕手》《谍影重重》三部曲《十三罗汉》的是哪位好莱坞男星?</Question>
@@ -31277,14 +31245,14 @@
 </Q>
 <Q>
         <Question>秦始皇手下的那位将军曾率领兵30万北逐匈奴，修筑了万里长城?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>电影《莫扎特传》中，莫咋特临终前写的最后一首曲子是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
-        <Question>演唱了电影《狮子王》主题曲和《风中之烛》的是哪位英国著名音乐人?  艾尔顿?</Question>
+        <Question>演唱了电影《狮子王》主题曲和《风中之烛》的是哪位英国著名音乐人?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
@@ -31337,7 +31305,7 @@
 </Q>
 <Q>
         <Question>网球四大满贯赛事之一的“温网’全称是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>年中国网球公开赛中，战胜特松加并连续三次获得中网男单冠军的人是谁?</Question>
@@ -31345,15 +31313,15 @@
 </Q>
 <Q>
         <Question>《卜算子》中”若得山花插满头“的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>辛弃疾《清平乐?村居》中，“最喜小儿无赖”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>一人表演动作，一人藏在身后说或唱，这种曲艺叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>年黎明和哪位北京出生的天后合作了影片《大城小事》?</Question>
@@ -31477,7 +31445,7 @@
 </Q>
 <Q>
         <Question>“忍一时，风平浪静”的下一句?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在新版《还珠格格》中饰演容嬷嬷一角的是哪位内地女演员?</Question>
@@ -31505,11 +31473,11 @@
 </Q>
 <Q>
         <Question>白居易诗中名句“浔阳江头夜送客”的下一句?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>唐代诗人崔颢《黄鹤楼》中，“晴川历历汉阳树”的下一句?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>流行于80年代电影《搭错车》主题曲《基干倘卖无》是由马尾女歌星演唱的?</Question>
@@ -31517,10 +31485,10 @@
 </Q>
 <Q>
         <Question>由卢冠廷演唱的电影《大话西游》的片尾曲叫什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
-        <Question>小说《基督山伯爵》中，搜陷害进入监狱后越狱报仇的男主人公是谁?  埃德蒙?</Question>
+        <Question>小说《基督山伯爵》中，搜陷害进入监狱后越狱报仇的男主人公是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
@@ -31537,7 +31505,7 @@
 </Q>
 <Q>
         <Question>“一个篱笆三个桩”的下一句?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>儿歌《种太阳》歌词“一个送给，送南极，一个送给，送给那里”?</Question>
@@ -31589,11 +31557,11 @@
 </Q>
 <Q>
         <Question>“日出江花红胜火，春来江水绿如蓝”出自白居易的那首诗?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>苏轼《水调歌头》，“起舞弄清影”的下一句?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>曾获得2012年亚洲羽毛球竞标赛冠军的中国男子羽毛球队主力单打选手是谁?</Question>
@@ -31661,11 +31629,11 @@
 </Q>
 <Q>
         <Question>岳飞《满江红》中的诗句，莫等闲的下一句?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>龚自珍《己亥杂诗》中，“我劝天公重抖擞”的下一句?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>中国十大古典曲之一的《高山流水》曲作者是谁?</Question>
@@ -31677,7 +31645,7 @@
 </Q>
 <Q>
         <Question>“黄沙百战穿金甲”的下一句?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在2012年伦敦奥运会开幕前，因伤退出比赛的中国男子体操队队员是谁?</Question>
@@ -31705,7 +31673,7 @@
 </Q>
 <Q>
         <Question>俗话说，“救人一命”的下一句?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我们用欧洲的哪座城市“不是一天建成的”来形容做事情需要一点一滴的积蓄?</Question>
@@ -31777,7 +31745,7 @@
 </Q>
 <Q>
         <Question>太平天国时期，被洪秀全封为翼王的叫什么名字?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>乐府名诗《孔雀东南飞》讲述的是焦仲卿和那位女性的爱情悲剧?</Question>
@@ -31793,7 +31761,7 @@
 </Q>
 <Q>
         <Question>孟浩然的诗《临洞庭湖赠张丞相》中“气蒸云梦泽”的下一句?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>获得了第一届金话筒奖，并曾是《动物世界》节目男播音员叫什么?</Question>
@@ -32197,7 +32165,7 @@
 </Q>
 <Q>
         <Question>俗语“水至清则无鱼”的下一句?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我国古代的一个时辰代表我们现在的几个小时?</Question>
@@ -32605,7 +32573,7 @@
 </Q>
 <Q>
         <Question>李白的诗句“欲渡黄河冰塞川”的下一句?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>陈忠实的代表作《白鹿原》1997年荣获中国长篇小说最高荣誉的什么奖?</Question>
@@ -32633,7 +32601,7 @@
 </Q>
 <Q>
         <Question>出自元代名曲《琵琶记》中的名句，“我本将心向明月”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我国第二大平原是?华北平原 我国第二大高原是?</Question>
@@ -32653,11 +32621,11 @@
 </Q>
 <Q>
         <Question>唐代诗人柳宗元的《江雪》中，“孤舟蓑笠翁”下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>李清照的《夏日绝句》中，“至今思项羽”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>NBA中效力于快船队绰号“关键先生”的是哪位球星?</Question>
@@ -32729,7 +32697,7 @@
 </Q>
 <Q>
         <Question>来自巴西的球员穆里奇目前效力于哪支中超球队?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>绰号“野兽”“阿帕奇”的著名阿根廷籍足球明星是谁?</Question>
@@ -32741,15 +32709,15 @@
 </Q>
 <Q>
         <Question>在物理学中，衡量力的大小的国际单位是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在国际单位制中，压强的单位是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>“7UP”是我们常喝的哪一种碳酸饮料?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>在世界家政行业中，有世界上最专业的保姆美称的是哪个国家的佣人?</Question>
@@ -32877,7 +32845,7 @@
 </Q>
 <Q>
         <Question>《三国演义》中，赤壁之战草船借箭之时，与诸葛亮同乘于江上的吴国谋臣是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>三国中被称为“虎痴”的魏国将领是哪位?</Question>
@@ -32893,7 +32861,7 @@
 </Q>
 <Q>
         <Question>司马迁《史记?滑稽列传》中“此鸟不飞则已”的下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>《鹿鼎记》中韦小宝交到的第一个朋友，同时也是与韦小宝一起上北京的人物是谁?</Question>
@@ -32901,11 +32869,11 @@
 </Q>
 <Q>
         <Question>《射雕英雄传》中有“南帝”称号的段智兴，出家后的法号是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>奥运会击剑比赛项目分为三项，花剑、重剑和什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>旧称“西贡”，有“东方巴黎”美誉的是越南的哪座城市?</Question>
@@ -32933,7 +32901,7 @@
 </Q>
 <Q>
         <Question>广告中经典台词，俗话说什么不是病，疼起来要人命?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>世界上最长的人造建筑是位于中国的那项宏伟建筑?</Question>
@@ -32945,11 +32913,11 @@
 </Q>
 <Q>
         <Question>范仲淹的诗《江上渔者》中，“江上往来人”的下一句?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>杜甫的诗《客至》“花径不曾缘客扫”的下一句?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>金庸的十四部小说中的“飞雪连天射白鹿”中的天是指哪部小说?</Question>
@@ -33057,7 +33025,7 @@
 </Q>
 <Q>
         <Question>出自《诗经》的名句“关关雎鸠”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>被歌迷称为“笔笔”的是哪位内地著名女歌手?</Question>
@@ -33069,7 +33037,7 @@
 </Q>
 <Q>
         <Question>被称为“文艺复兴的摇篮”的是那一座意大利城市?</Question>
-        <AnswerType>Other</AnswerType>
+        <AnswerType>Location</AnswerType>
 </Q>
 <Q>
         <Question>保加利亚的首都是哪座城市?</Question>
@@ -33152,7 +33120,7 @@
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>“梦是愿望的达成”是奥地利哪位著名心理学家对梦的观点?   西格蒙德?</Question>
+        <Question>“梦是愿望的达成”是奥地利哪位著名心理学家对梦的观点?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
@@ -33172,7 +33140,7 @@
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
-        <Question>领导了拉美独立战争，被称为“拉丁美洲解放者”的哪位杰出领袖?   西蒙?</Question>
+        <Question>领导了拉美独立战争，被称为“拉丁美洲解放者”的哪位杰出领袖?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
@@ -33217,7 +33185,7 @@
 </Q>
 <Q>
         <Question>李白的诗《望庐山瀑布》中，“日照香炉生紫烟”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我国第一枚氢弹、原子弹的诞生地，也是我国第一个核武器研制基地的“原子城”位于哪个省?</Question>
@@ -33228,7 +33196,7 @@
         <AnswerType>Location</AnswerType>
 </Q>
 <Q>
-        <Question>美国独立战争期间的主要领导人之一，起草《独立宣言》的美国第三任总统是谁?   托马斯?</Question>
+        <Question>美国独立战争期间的主要领导人之一，起草《独立宣言》的美国第三任总统是谁?</Question>
         <AnswerType>Person</AnswerType>
 </Q>
 <Q>
@@ -33313,7 +33281,7 @@
 </Q>
 <Q>
         <Question>出自冯梦龙《警世通言》，“光阴似箭”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>因丰富的旅游资源被称为“安达曼海上的一颗明珠”的普吉岛位于哪个东南亚国家?</Question>
@@ -33533,7 +33501,7 @@
 </Q>
 <Q>
         <Question>出自辛弃疾的《破阵子》中，“八百里分麾下炙”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>陇海铁路是从江苏连云港通往哪个城市的铁路干线?</Question>
@@ -33569,7 +33537,7 @@
 </Q>
 <Q>
         <Question>相声演员马季的儿子叫什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Person</AnswerType>
 </Q>
 <Q>
         <Question>著名相声演员郭德纲的师傅是哪位著名相声演员?</Question>
@@ -33989,7 +33957,7 @@
 </Q>
 <Q>
         <Question>欧阳修的《醉翁亭记》的第一句话，也是作者用以形容安徽滁州的多山的话是?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>写出了《巨人传》等名著的是哪位法国的著名文艺复兴时期作家?</Question>
@@ -35349,7 +35317,7 @@
 </Q>
 <Q>
         <Question>古代长篇叙事诗《孔雀东南飞》中，“孔雀东南飞”下一句是?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>与世界人口第二大国印度对应的三角洲是?</Question>
@@ -36465,11 +36433,11 @@
 </Q>
 <Q>
         <Question>金庸小说中的第一宝刀是《倚天屠龙记》中的哪把刀?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>唐代诗人李白的《赠汪伦》中，“桃花潭水深千尺”下一句是什么?</Question>
-        <AnswerType>Person</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>俄罗斯联邦的第一任总统是谁?</Question>
@@ -36501,11 +36469,11 @@
 </Q>
 <Q>
         <Question>出自《增广贤文》中“命里有时终须有”的下半句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>曹操的诗《短歌行》中，“何以解忧”的下一句是什么?</Question>
-        <AnswerType>Location</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>我国南北朝时期北朝建立的第一个朝代是什么?</Question>
@@ -36537,7 +36505,7 @@
 </Q>
 <Q>
         <Question>苏轼的《前赤壁赋》中“寄蜉蝣于天地”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>长江发源于我国青藏高原的哪座山上?</Question>
@@ -36585,11 +36553,7 @@
 </Q>
 <Q>
         <Question>唐代诗人李商隐的代表作《锦瑟》中，“锦瑟无端五十弦”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
-</Q>
-<Q>
-        <Question>唐代诗人李商隐的代表作《锦瑟》中，“锦瑟无端五十弦”的下一句是什么?</Question>
-        <AnswerType>Number</AnswerType>
+        <AnswerType>Other</AnswerType>
 </Q>
 <Q>
         <Question>小白兔三分钟能吃掉一只萝卜，那么理论上它一刻钟能吃掉几只萝卜?</Question>
