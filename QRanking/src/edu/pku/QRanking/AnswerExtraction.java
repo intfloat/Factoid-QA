@@ -43,7 +43,7 @@ public class AnswerExtraction {
 		try {
 			db = dbf.newDocumentBuilder();
 			doc = null;
-			doc = db.parse("stage3.xml");
+			doc = db.parse(inputFileName);
 			root = doc.getDocumentElement();
 			NodeList nodeList = root.getElementsByTagName("question");
 
