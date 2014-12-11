@@ -9,7 +9,7 @@ import edu.pku.QRanking.Question;
  * @email stormier@126.com
  * 
  */
-public interface EvidenceScorer {
+public interface SummaryScorer {
 
     public void score(Question question);
 }
