@@ -33,8 +33,6 @@ public class AnswerExtraction {
 	public void extractAnswer(String inputFileName, String outputFileName)
 			throws Exception {
 		NLPTools.initalize();
-		File input = new File(inputFileName);
-
 		DocumentBuilderFactory dbf;
 		DocumentBuilder db;
 		dbf = DocumentBuilderFactory.newInstance();

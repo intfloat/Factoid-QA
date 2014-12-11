@@ -54,8 +54,8 @@ public class SkipBigramEmergeScorer implements SummaryScorer {
 				}
 			}
 			answer.getSummary().setScore(answer.getSummary().getScore() + weight*score);
-			System.out.println("Evidence Skip Bigram Emerge score:" + answer.getAnswer_content()
-   					+ " " + score);
+	//		System.out.println("Evidence Skip Bigram Emerge score:" + answer.getAnswer_content()
+   	//				+ " " + score);
 		}
 
 	}

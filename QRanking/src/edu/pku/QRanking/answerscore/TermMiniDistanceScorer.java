@@ -70,8 +70,8 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 				return ;
 			//float score = answer.score / distance;
 			float score = weight / distance;
-			System.out.println("term mini distance score:" + answer.getAnswer_content()
-					+ " " + score + " distance:" + distance);
+	//		System.out.println("term mini distance score:" + answer.getAnswer_content()
+	//				+ " " + score + " distance:" + distance);
 			answer.setScore(answer.getScore() + score);
 
 		}

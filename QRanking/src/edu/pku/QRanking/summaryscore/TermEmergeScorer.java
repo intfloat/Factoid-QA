@@ -37,8 +37,8 @@ public class TermEmergeScorer implements SummaryScorer {
 						score += 1.0/answer.getSummary().getSummary_content().size();
 			}
 			answer.getSummary().setScore(answer.getSummary().getScore() + weight*score);
-			System.out.println("Evidence Term Emerge score:" + answer.getAnswer_content()
-   					+ " " + score);
+	//		System.out.println("Evidence Term Emerge score:" + answer.getAnswer_content()
+   	//				+ " " + score);
 		}
 
 	}

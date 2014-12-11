@@ -53,8 +53,8 @@ public class BigramEmergeScorer implements SummaryScorer {
 			}
 			
 			answer.getSummary().setScore(answer.getSummary().getScore() + weight*score);
-			System.out.println("Evidence Bigram Emerge score:" + answer.getAnswer_content()
-   					+ " " + score);
+	//		System.out.println("Evidence Bigram Emerge score:" + answer.getAnswer_content()
+   	//				+ " " + score);
 			
 		}
 	}

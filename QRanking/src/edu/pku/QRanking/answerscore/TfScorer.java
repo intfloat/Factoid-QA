@@ -33,7 +33,7 @@ public class TfScorer implements AnswerScorer{
 				}
 			}
 			answer.setScore(answer.getScore() + count*weight);
-			System.out.println("tf score:"+answer.getAnswer_content()+" "+count*weight);
+	//		System.out.println("tf score:"+answer.getAnswer_content()+" "+count*weight);
 		}
 	}
 

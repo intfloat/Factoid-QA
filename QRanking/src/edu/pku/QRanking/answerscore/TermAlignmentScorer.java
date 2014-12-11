@@ -90,8 +90,8 @@ public class TermAlignmentScorer implements AnswerScorer{
                    int questionLen = question.getTitle().size();
                    float score = weight * questionLen / avgLen;
                    answer.setScore(answer.getScore() + score);
-                   System.out.println("term alignment score:" + answer.getAnswer_content()
-       					+ " " + score + " count:" + count+" length:"+length);
+      //             System.out.println("term alignment score:" + answer.getAnswer_content()
+      // 					+ " " + score + " count:" + count+" length:"+length);
                 }
 				
 				

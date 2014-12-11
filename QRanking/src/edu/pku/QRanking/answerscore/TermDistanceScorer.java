@@ -72,8 +72,8 @@ public class TermDistanceScorer implements AnswerScorer {
 			//float score = answer.score / distance;
 			//float score = weight * 50/ distance;
 			float score = weight * question.getTitle().size()/ (float)distance;
-			System.out.println("term distance score:" + answer.getAnswer_content()
-					+ " " + score + " distance:" + distance);
+	//		System.out.println("term distance score:" + answer.getAnswer_content()
+	//				+ " " + score + " distance:" + distance);
 			answer.setScore(answer.getScore() + score);
 
 		}
