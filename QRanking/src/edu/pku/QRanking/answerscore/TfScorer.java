@@ -25,15 +25,15 @@ public class TfScorer implements AnswerScorer{
 		{
 			//answer word counts
 			int count = 0;
-			for(String word:answer.summary.summary_content)
+			for(String word:answer.getSummary().getSummary_content())
 			{
-				if(word.equals(answer.answer_content))
+				if(word.equals(answer.getAnswer_content()))
 				{
 					count++;
 				}
 			}
-			answer.score += count*weight;
-			System.out.println("tf score:"+answer.answer_content+" "+count*weight);
+			answer.setScore(answer.getScore() + count*weight);
+			System.out.println("tf score:"+answer.getAnswer_content()+" "+count*weight);
 		}
 	}
 

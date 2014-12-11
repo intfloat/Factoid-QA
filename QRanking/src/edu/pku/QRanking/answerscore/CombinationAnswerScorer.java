@@ -53,22 +53,22 @@ public class CombinationAnswerScorer implements AnswerScorer {
 		List<SynthesizedAnswer> synthesizedanswer = new ArrayList<SynthesizedAnswer>();
 		Map<String, Float> score_map = new HashMap<String, Float>();
 		for (Answer answer : question.answers) {
-			if (answer.answer_content.contains("百度")
-					|| answer.answer_content.contains("知道")
-					|| answer.answer_content.contains("文库")
-					|| answer.answer_content.contains("答案")
-					|| answer.answer_content.contains("原理")
-					|| answer.answer_content.contains("题库")) {
+			if (answer.getAnswer_content().contains("百度")
+					|| answer.getAnswer_content().contains("知道")
+					|| answer.getAnswer_content().contains("文库")
+					|| answer.getAnswer_content().contains("答案")
+					|| answer.getAnswer_content().contains("原理")
+					|| answer.getAnswer_content().contains("题库")) {
 				cached.add(answer);
 				continue;
 			}
 
 			for (String word : question.title) {
-				if (word.equals("俄罗斯人") || answer.answer_content.equals("俄罗斯"))
+				if (word.equals("俄罗斯人") || answer.getAnswer_content().equals("俄罗斯"))
 					System.out.println("word:" + word + "    answer:"
-							+ answer.answer_content);
+							+ answer.getAnswer_content());
 
-				if (word.contains(answer.answer_content)) {
+				if (word.contains(answer.getAnswer_content())) {
 					cached.add(answer);
 					break;
 				}
@@ -88,16 +88,16 @@ public class CombinationAnswerScorer implements AnswerScorer {
 		// synthesize answers final_score = sum(answer_score in all
 		// evidences)+sum(evidence_score which contains this answer)
 		for (Answer answer : question.answers) {
-			if (score_map.get(answer.answer_content) == null) {
+			if (score_map.get(answer.getAnswer_content()) == null) {
 				if (question.unique_answer == false)
-					score_map.put(answer.answer_content, answer.score
-							+ answer.summary.score);
+					score_map.put(answer.getAnswer_content(), answer.getScore()
+							+ answer.getSummary().getScore());
 				else
-					score_map.put(answer.answer_content, answer.score);
+					score_map.put(answer.getAnswer_content(), answer.getScore());
 			} else {
-				float score = score_map.get(answer.answer_content);
-				score += answer.score + answer.summary.score;
-				score_map.put(answer.answer_content, score);
+				float score = score_map.get(answer.getAnswer_content());
+				score += answer.getScore() + answer.getSummary().getScore();
+				score_map.put(answer.getAnswer_content(), score);
 			}
 		}
 

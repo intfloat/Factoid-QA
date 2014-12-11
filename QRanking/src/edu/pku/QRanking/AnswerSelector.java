@@ -21,13 +21,13 @@ public class AnswerSelector {
 		{
 			for(Summary evidence: question.summarys)
 			{
-				for(TaggedWord word:evidence.tagged_summary)
+				for(TaggedWord word:evidence.getTagged_summary())
 				{
 					if(word.tag().equals("NR") && word.word().length() != 1)
 					{
 						Answer new_one = new Answer();
-						new_one.answer_content = word.word();
-						new_one.summary = evidence;
+						new_one.setAnswer_content(word.word());
+						new_one.setSummary(evidence);
 						question.answers.add(new_one);
 					}
 				}
@@ -38,13 +38,13 @@ public class AnswerSelector {
 		{
 			for(Summary evidence: question.summarys)
 			{
-				for(TaggedWord word:evidence.tagged_summary)
+				for(TaggedWord word:evidence.getTagged_summary())
 				{
 					if(word.tag().equals("NR") && word.word().length() != 1)
 					{
 						Answer new_one = new Answer();
-						new_one.answer_content = word.word();
-						new_one.summary = evidence;
+						new_one.setAnswer_content(word.word());
+						new_one.setSummary(evidence);
 						question.answers.add(new_one);
 					}
 				}
@@ -55,13 +55,13 @@ public class AnswerSelector {
 		{
 			for(Summary evidence: question.summarys)
 			{
-				for(TaggedWord word:evidence.tagged_summary)
+				for(TaggedWord word:evidence.getTagged_summary())
 				{
 					if(word.tag().equals("NT")||word.tag().equals("CD") && word.word().length() != 1)
 					{
 						Answer new_one = new Answer();
-						new_one.answer_content = word.word();
-						new_one.summary = evidence;
+						new_one.setAnswer_content(word.word());
+						new_one.setSummary(evidence);
 						question.answers.add(new_one);
 					}
 				}
@@ -72,13 +72,13 @@ public class AnswerSelector {
 		{
 			for(Summary evidence: question.summarys)
 			{
-				for(TaggedWord word:evidence.tagged_summary)
+				for(TaggedWord word:evidence.getTagged_summary())
 				{
 					if(word.tag().equals("NR")||word.tag().equals("VV")||word.tag().equals("NN") && word.word().length() != 1)
 					{
 						Answer new_one = new Answer();
-						new_one.answer_content = word.word();
-						new_one.summary = evidence;
+						new_one.setAnswer_content(word.word());
+						new_one.setSummary(evidence);
 						question.answers.add(new_one);
 					}
 				}

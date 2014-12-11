@@ -34,7 +34,7 @@ public class TermAlignmentScorer implements AnswerScorer{
 						continue;
 					
                     if (i == j) {
-                    	origin_pattern.add(answer.answer_content);
+                    	origin_pattern.add(answer.getAnswer_content());
                     } else {
                     	origin_pattern.add(question.title.get(j));
                     }
@@ -66,7 +66,7 @@ public class TermAlignmentScorer implements AnswerScorer{
                     Pattern p = Pattern.compile(pattern);
                     
                     String evidence_content_string = "";
-    				for (String word : answer.summary.summary_content) {
+    				for (String word : answer.getSummary().getSummary_content()) {
     					evidence_content_string += word;
     				}
                     
@@ -89,8 +89,8 @@ public class TermAlignmentScorer implements AnswerScorer{
                    float avgLen = length /  (float)count;
                    int questionLen = question.title.size();
                    float score = weight * questionLen / avgLen;
-                   answer.score += score;
-                   System.out.println("term alignment score:" + answer.answer_content
+                   answer.setScore(answer.getScore() + score);
+                   System.out.println("term alignment score:" + answer.getAnswer_content()
        					+ " " + score + " count:" + count+" length:"+length);
                 }
 				

@@ -81,8 +81,8 @@ public class AnswerExtraction {
 			{
 				question.unique_answer = true;
 				Answer right_one = new Answer();
-				right_one.answer_content = subElements.get(0).text();
-				right_one.score = 100;
+				right_one.setAnswer_content(subElements.get(0).text());
+				right_one.setScore(100);
 				question.answers.add(right_one);
 				
 			}
@@ -92,9 +92,9 @@ public class AnswerExtraction {
 				Summary new_summary = new Summary();
 				String summary = subelement.text();
 				newone = NLPTools.segment(summary);
-				new_summary.summary_content = newone;
-				new_summary.tagged_summary = NLPTools.postag(newone);
-				new_summary.score = 0;
+				new_summary.setSummary_content(newone);
+				new_summary.setTagged_summary(NLPTools.postag(newone));
+				new_summary.setScore(0);
 				question.summarys.add(new_summary);
 			}
 

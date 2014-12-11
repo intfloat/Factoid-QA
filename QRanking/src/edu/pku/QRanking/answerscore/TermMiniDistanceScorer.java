@@ -26,8 +26,8 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 			List<Integer> question_positions = new ArrayList<Integer>();
 
 			int i = 1;
-			for (String term : answer.summary.summary_content) {
-				if (term.equals(answer.answer_content)) {
+			for (String term : answer.getSummary().getSummary_content()) {
+				if (term.equals(answer.getAnswer_content())) {
 					answer_positions.add(i);
 				}
 				i++;
@@ -49,7 +49,7 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 					continue;
 				}
 				i = 1;
-				for (String term2 : answer.summary.summary_content) {
+				for (String term2 : answer.getSummary().getSummary_content()) {
 					if (term2.equals(term.word())) {
 						question_positions.add(i);
 					}
@@ -70,9 +70,9 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 				return ;
 			//float score = answer.score / distance;
 			float score = weight / distance;
-			System.out.println("term mini distance score:" + answer.answer_content
+			System.out.println("term mini distance score:" + answer.getAnswer_content()
 					+ " " + score + " distance:" + distance);
-			answer.score += score;
+			answer.setScore(answer.getScore() + score);
 
 		}
 
