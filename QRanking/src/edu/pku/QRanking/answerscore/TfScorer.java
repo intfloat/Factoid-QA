@@ -25,7 +25,7 @@ public class TfScorer implements AnswerScorer{
 		{
 			//answer word counts
 			int count = 0;
-			for(String word:answer.evidence.summary_content)
+			for(String word:answer.summary.summary_content)
 			{
 				if(word.equals(answer.answer_content))
 				{

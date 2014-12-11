@@ -44,16 +44,16 @@ public class SkipBigramEmergeScorer implements EvidenceScorer {
 			for (String term : terms) {
 				Pattern p = Pattern.compile(term);
 				String evidence_content_string = "";
-				for (String word : answer.evidence.summary_content) {
+				for (String word : answer.summary.summary_content) {
 					evidence_content_string += word;
 				}
 				Matcher matcher = p.matcher(evidence_content_string);
 				while (matcher.find()) {
 					String text = matcher.group();
-					score += 2.0/answer.evidence.summary_content.size();
+					score += 2.0/answer.summary.summary_content.size();
 				}
 			}
-			answer.evidence.score += weight*score;
+			answer.summary.score += weight*score;
 			System.out.println("Evidence Skip Bigram Emerge score:" + answer.answer_content
    					+ " " + score);
 		}

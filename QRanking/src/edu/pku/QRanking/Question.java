@@ -18,6 +18,7 @@ public class Question {
 	public String id;
 	public List<String> title;
 	public ArrayList<TaggedWord> tagged_title = new ArrayList<TaggedWord>();
+	public boolean unique_answer;
 	
 	public List<Summary> summarys = new ArrayList<Summary>();
 	

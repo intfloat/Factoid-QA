@@ -40,8 +40,8 @@ public class BigramEmergeScorer implements EvidenceScorer {
 		for (Answer answer : question.answers) {
 			float score = 0;
 			List<String> evidence_bigram = new ArrayList();
-			for (int j = 0; j <answer.evidence.summary_content.size()-1;j++) {
-				evidence_bigram.add(answer.evidence.summary_content.get(j)+answer.evidence.summary_content.get(j+1));
+			for (int j = 0; j <answer.summary.summary_content.size()-1;j++) {
+				evidence_bigram.add(answer.summary.summary_content.get(j)+answer.summary.summary_content.get(j+1));
 			}
 			for(String term: terms)
 			{
@@ -52,7 +52,7 @@ public class BigramEmergeScorer implements EvidenceScorer {
 				}
 			}
 			
-			answer.evidence.score += weight*score;
+			answer.summary.score += weight*score;
 			System.out.println("Evidence Bigram Emerge score:" + answer.answer_content
    					+ " " + score);
 			

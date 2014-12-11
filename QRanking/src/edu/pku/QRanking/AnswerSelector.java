@@ -23,11 +23,11 @@ public class AnswerSelector {
 			{
 				for(TaggedWord word:evidence.tagged_summary)
 				{
-					if(word.tag().equals("NR"))
+					if(word.tag().equals("NR") && word.word().length() != 1)
 					{
 						Answer new_one = new Answer();
 						new_one.answer_content = word.word();
-						new_one.evidence = evidence;
+						new_one.summary = evidence;
 						question.answers.add(new_one);
 					}
 				}
@@ -40,11 +40,11 @@ public class AnswerSelector {
 			{
 				for(TaggedWord word:evidence.tagged_summary)
 				{
-					if(word.tag().equals("NR"))
+					if(word.tag().equals("NR") && word.word().length() != 1)
 					{
 						Answer new_one = new Answer();
 						new_one.answer_content = word.word();
-						new_one.evidence = evidence;
+						new_one.summary = evidence;
 						question.answers.add(new_one);
 					}
 				}
@@ -57,11 +57,11 @@ public class AnswerSelector {
 			{
 				for(TaggedWord word:evidence.tagged_summary)
 				{
-					if(word.tag().equals("NT")||word.tag().equals("CD"))
+					if(word.tag().equals("NT")||word.tag().equals("CD") && word.word().length() != 1)
 					{
 						Answer new_one = new Answer();
 						new_one.answer_content = word.word();
-						new_one.evidence = evidence;
+						new_one.summary = evidence;
 						question.answers.add(new_one);
 					}
 				}
@@ -74,11 +74,11 @@ public class AnswerSelector {
 			{
 				for(TaggedWord word:evidence.tagged_summary)
 				{
-					if(word.tag().equals("NR")||word.tag().equals("VV")||word.tag().equals("NN"))
+					if(word.tag().equals("NR")||word.tag().equals("VV")||word.tag().equals("NN") && word.word().length() != 1)
 					{
 						Answer new_one = new Answer();
 						new_one.answer_content = word.word();
-						new_one.evidence = evidence;
+						new_one.summary = evidence;
 						question.answers.add(new_one);
 					}
 				}

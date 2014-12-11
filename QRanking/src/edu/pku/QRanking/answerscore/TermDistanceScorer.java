@@ -26,7 +26,7 @@ public class TermDistanceScorer implements AnswerScorer {
 			List<Integer> question_positions = new ArrayList<Integer>();
 
 			int i = 1;
-			for (String term : answer.evidence.summary_content) {
+			for (String term : answer.summary.summary_content) {
 				if (term.equals(answer.answer_content)) {
 					answer_positions.add(i);
 					//System.out.println("pos1: "+i);
@@ -51,7 +51,7 @@ public class TermDistanceScorer implements AnswerScorer {
 					continue;
 				}*/
 				i = 1;
-				for (String term2 : answer.evidence.summary_content) {
+				for (String term2 : answer.summary.summary_content) {
 					if (term2.equals(term.word())) {
 						question_positions.add(i);
 					}

@@ -66,7 +66,7 @@ public class TermAlignmentScorer implements AnswerScorer{
                     Pattern p = Pattern.compile(pattern);
                     
                     String evidence_content_string = "";
-    				for (String word : answer.evidence.summary_content) {
+    				for (String word : answer.summary.summary_content) {
     					evidence_content_string += word;
     				}
                     

@@ -77,7 +77,18 @@ public class AnswerExtraction {
 			 */
 			// get summary
 			subElements = element.select("summary");
+			if(subElements.size() == 1)
+			{
+				question.unique_answer = true;
+				Answer right_one = new Answer();
+				right_one.answer_content = subElements.get(0).text();
+				right_one.score = 100;
+				question.answers.add(right_one);
+				
+			}
+			else
 			for (Element subelement : subElements) {
+				question.unique_answer = false;
 				Summary new_summary = new Summary();
 				String summary = subelement.text();
 				newone = NLPTools.segment(summary);
@@ -91,11 +102,13 @@ public class AnswerExtraction {
 		}
 		// get candidate answers
 		for (Question question : questions) {
+			if(question.unique_answer == false)
 			selector.select(question);
 		}
 
 		// score summarys
 		for (Question question : questions) {
+			if(question.unique_answer == false)
 			summaryScorer.score(question);
 		}
 
@@ -129,7 +142,10 @@ public class AnswerExtraction {
 
 	public static void main(String[] args) throws Exception {
 		AnswerExtraction ae = new AnswerExtraction();
-		ae.extractAnswer("stage3.xml", "stage4.xml");
+		if(args.length == 0)
+			ae.extractAnswer("stage3.xml", "stage4.xml");
+		else if(args.length == 2)
+			ae.extractAnswer(args[0], args[1]);
 
 	}
 
