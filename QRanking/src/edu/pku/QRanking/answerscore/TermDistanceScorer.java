@@ -21,7 +21,7 @@ public class TermDistanceScorer implements AnswerScorer {
 
 	@Override
 	public void score(Question question) {
-		for (Answer answer : question.answers) {
+		for (Answer answer : question.getAnswers()) {
 			List<Integer> answer_positions = new ArrayList<Integer>();
 			List<Integer> question_positions = new ArrayList<Integer>();
 
@@ -42,7 +42,7 @@ public class TermDistanceScorer implements AnswerScorer {
 			interrogative.add("AD"); // 多少 为什么
 			 */
 			
-			for (TaggedWord term : question.tagged_title) {
+			for (TaggedWord term : question.getTagged_title()) {
 				if (!term.tag().equals("NN")&&!term.tag().equals("NR")&&!term.tag().equals("VV")&&!term.tag().equals("FW")&&!term.tag().equals("JJ")&&!term.tag().equals("NT")&&!term.tag().equals("OD")) {
 					continue;
 				}
@@ -71,7 +71,7 @@ public class TermDistanceScorer implements AnswerScorer {
 			
 			//float score = answer.score / distance;
 			//float score = weight * 50/ distance;
-			float score = weight * question.title.size()/ (float)distance;
+			float score = weight * question.getTitle().size()/ (float)distance;
 			System.out.println("term distance score:" + answer.getAnswer_content()
 					+ " " + score + " distance:" + distance);
 			answer.setScore(answer.getScore() + score);

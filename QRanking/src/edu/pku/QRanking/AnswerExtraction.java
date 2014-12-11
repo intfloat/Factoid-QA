@@ -3,10 +3,14 @@ package edu.pku.QRanking;
 import java.io.*;
 import java.util.*;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import edu.pku.QRanking.answerscore.CombinationAnswerScorer;
 import edu.pku.QRanking.summaryscore.CombinationSummaryScorer;
@@ -30,86 +34,89 @@ public class AnswerExtraction {
 			throws Exception {
 		NLPTools.initalize();
 		File input = new File(inputFileName);
-		Document doc = Jsoup.parse(input, "UTF-8", "");
-		Elements elements = doc.select("QuestionSet > question");
-		List<String> newone;
-		for (Element element : elements) {
-			Question question = new Question();
-			question.id = element.attr("id");
-			// get question
-			Elements subElements = element.select("q");
-			String title = subElements.get(0).text();
-			newone = NLPTools.segment(title);
-			question.title = newone;
-			question.tagged_title = NLPTools.postag(newone);
 
-			// get question type
-			subElements = element.select("category");
-			String type = subElements.get(0).text();
-			
-			if(type.equals("Person"))
-				question.category = QuestionCategory.PERSON_NAME;
-			else if(type.equals("Location"))
-				question.category = QuestionCategory.LOCATION_NAME;
-			else if(type.equals("Number"))
-				question.category = QuestionCategory.NUMBER;
-			else if(type.equals("Other"))
-				question.category = QuestionCategory.OTHER;
-			else
-				question.category = QuestionCategory.NULL;
-			/*
-			switch (type) {
-			case "Person":
-				question.category = QuestionCategory.PERSON_NAME;
-				break;
-			case "Location":
-				question.category = QuestionCategory.LOCATION_NAME;
-				break;
-			case "Number":
-				question.category = QuestionCategory.NUMBER;
-				break;
-			case "Other":
-				question.category = QuestionCategory.OTHER;
-				break;
-			default:
-				question.category = QuestionCategory.NULL;
-			}
-			 */
-			// get summary
-			subElements = element.select("summary");
-			if(subElements.size() == 1)
-			{
-				question.unique_answer = true;
-				Answer right_one = new Answer();
-				right_one.setAnswer_content(subElements.get(0).text());
-				right_one.setScore(100);
-				question.answers.add(right_one);
+		DocumentBuilderFactory dbf;
+		DocumentBuilder db;
+		dbf = DocumentBuilderFactory.newInstance();
+		Element root;
+		Document doc;
+		try {
+			db = dbf.newDocumentBuilder();
+			doc = null;
+			doc = db.parse("stage3.xml");
+			root = doc.getDocumentElement();
+			NodeList nodeList = root.getElementsByTagName("question");
+
+			for (int i = 0; i < nodeList.getLength(); i++) {
+				Question question = new Question();
+
+				question.setId(((Element) nodeList.item(i)).getAttributes()
+						.getNamedItem("id").getNodeValue());
+				question.setTitle(NLPTools.segment(((Element) nodeList.item(i))
+						.getElementsByTagName("q").item(0).getTextContent()));
+				question.setTagged_title(NLPTools.postag(question.getTitle()));
+
+				String category = ((Element) nodeList.item(i))
+						.getElementsByTagName("category").item(0)
+						.getTextContent();
+
 				
-			}
-			else
-			for (Element subelement : subElements) {
-				question.unique_answer = false;
-				Summary new_summary = new Summary();
-				String summary = subelement.text();
-				newone = NLPTools.segment(summary);
-				new_summary.setSummary_content(newone);
-				new_summary.setTagged_summary(NLPTools.postag(newone));
-				new_summary.setScore(0);
-				question.summarys.add(new_summary);
-			}
+				if (category.contains("Person"))
+					question.setCategory(QuestionCategory.PERSON_NAME);
+				else if (category.contains("Location"))
+					question.setCategory(QuestionCategory.LOCATION_NAME);
+				else if (category.contains("Number"))
+					question.setCategory(QuestionCategory.NUMBER);
+				else if (category.contains("Other"))
+					question.setCategory(QuestionCategory.OTHER);
+				else
+					question.setCategory(QuestionCategory.NULL);
 
-			questions.add(question);
+				if (((Element) nodeList.item(i))
+						.getElementsByTagName("summary").getLength() == 1) {
+					question.setUnique_answer(true);
+					Answer right_one = new Answer();
+					right_one.setAnswer_content(((Element) nodeList.item(i))
+							.getElementsByTagName("summary").item(0)
+							.getTextContent());
+					right_one.setScore(100);
+					question.getAnswers().add(right_one);
+
+				} else {
+					for (int j = 0; j < ((Element) nodeList.item(i))
+							.getElementsByTagName("summary").getLength(); j++) {
+						question.setUnique_answer(false);
+
+						Summary new_summary = new Summary();
+
+						new_summary.setSummary_content(NLPTools
+								.segment(((Element) nodeList.item(i))
+										.getElementsByTagName("summary")
+										.item(j).getTextContent()));
+						new_summary.setTagged_summary(NLPTools
+								.postag(new_summary.getSummary_content()));
+						new_summary.setScore(0);
+						question.getSummarys().add(new_summary);
+					}
+				}
+				questions.add(question);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+
 		// get candidate answers
 		for (Question question : questions) {
-			if(question.unique_answer == false)
-			selector.select(question);
+			if (question.isUnique_answer() == false)
+				selector.select(question);
 		}
 
 		// score summarys
 		for (Question question : questions) {
-			if(question.unique_answer == false)
-			summaryScorer.score(question);
+			if (question.isUnique_answer() == false) {
+				summaryScorer.score(question);
+			}
 		}
 
 		// score answers
@@ -121,19 +128,18 @@ public class AnswerExtraction {
 		File output = new File(outputFileName);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(output));
 		for (Question question : questions) {
-			if (question.synthesized_answers.size() == 0)
-			{
-				writer.write(question.id + "\t" + " "
-						+"\n");
-			}
-			else
-			{
-			writer.write(question.id + "\t" + question.synthesized_answers.get(0).answer
-					+"\n");
+			if (question.getSynthesized_answers().size() == 0) {
+				writer.write(question.getId() + "\t" + " " + "\n");
+			} else {
+				writer.write(question.getId() + "\t"
+						+ question.getSynthesized_answers().get(0).answer
+						+ "\n");
 
-			for (SynthesizedAnswer answer : question.synthesized_answers) {
-				System.out.println(question.id + "\t" + answer.answer + " " + answer.score);
-			}
+				for (SynthesizedAnswer answer : question
+						.getSynthesized_answers()) {
+					System.out.println(question.getId() + "\t" + answer.answer
+							+ " " + answer.score);
+				}
 			}
 		}
 		writer.flush();
@@ -142,9 +148,9 @@ public class AnswerExtraction {
 
 	public static void main(String[] args) throws Exception {
 		AnswerExtraction ae = new AnswerExtraction();
-		if(args.length == 0)
+		if (args.length == 0)
 			ae.extractAnswer("stage3.xml", "stage4.xml");
-		else if(args.length == 2)
+		else if (args.length == 2)
 			ae.extractAnswer(args[0], args[1]);
 
 	}

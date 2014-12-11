@@ -15,11 +15,11 @@ public class AnswerSelector {
 	
 	public void select(Question question)
 	{
-		switch(question.category)
+		switch(question.getCategory())
 		{
 		case PERSON_NAME:
 		{
-			for(Summary evidence: question.summarys)
+			for(Summary evidence: question.getSummarys())
 			{
 				for(TaggedWord word:evidence.getTagged_summary())
 				{
@@ -28,7 +28,7 @@ public class AnswerSelector {
 						Answer new_one = new Answer();
 						new_one.setAnswer_content(word.word());
 						new_one.setSummary(evidence);
-						question.answers.add(new_one);
+						question.getAnswers().add(new_one);
 					}
 				}
 			}
@@ -36,7 +36,7 @@ public class AnswerSelector {
 		}
 		case LOCATION_NAME:
 		{
-			for(Summary evidence: question.summarys)
+			for(Summary evidence: question.getSummarys())
 			{
 				for(TaggedWord word:evidence.getTagged_summary())
 				{
@@ -45,7 +45,7 @@ public class AnswerSelector {
 						Answer new_one = new Answer();
 						new_one.setAnswer_content(word.word());
 						new_one.setSummary(evidence);
-						question.answers.add(new_one);
+						question.getAnswers().add(new_one);
 					}
 				}
 			}
@@ -53,7 +53,7 @@ public class AnswerSelector {
 		}
 		case NUMBER:
 		{
-			for(Summary evidence: question.summarys)
+			for(Summary evidence: question.getSummarys())
 			{
 				for(TaggedWord word:evidence.getTagged_summary())
 				{
@@ -62,7 +62,7 @@ public class AnswerSelector {
 						Answer new_one = new Answer();
 						new_one.setAnswer_content(word.word());
 						new_one.setSummary(evidence);
-						question.answers.add(new_one);
+						question.getAnswers().add(new_one);
 					}
 				}
 			}
@@ -70,7 +70,7 @@ public class AnswerSelector {
 		}
 		case OTHER:
 		{
-			for(Summary evidence: question.summarys)
+			for(Summary evidence: question.getSummarys())
 			{
 				for(TaggedWord word:evidence.getTagged_summary())
 				{
@@ -79,7 +79,7 @@ public class AnswerSelector {
 						Answer new_one = new Answer();
 						new_one.setAnswer_content(word.word());
 						new_one.setSummary(evidence);
-						question.answers.add(new_one);
+						question.getAnswers().add(new_one);
 					}
 				}
 			}

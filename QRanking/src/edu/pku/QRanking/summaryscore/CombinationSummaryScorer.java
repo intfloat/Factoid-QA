@@ -12,9 +12,9 @@ import edu.pku.QRanking.Question;
  * @email stormier@126.com
  * 
  */
-public class CombinationSummaryScorer implements EvidenceScorer {
+public class CombinationSummaryScorer implements SummaryScorer {
 
-	private final List<EvidenceScorer> scorers = new ArrayList<EvidenceScorer>();
+	private final List<SummaryScorer> scorers = new ArrayList<SummaryScorer>();
 	float weight;
 
 	public CombinationSummaryScorer() {
@@ -32,7 +32,7 @@ public class CombinationSummaryScorer implements EvidenceScorer {
 	@Override
 	public void score(Question question) {
 		// TODO Auto-generated method stub
-		for (EvidenceScorer scorer : scorers) {
+		for (SummaryScorer scorer : scorers) {
 			scorer.score(question);
 		}
 	}

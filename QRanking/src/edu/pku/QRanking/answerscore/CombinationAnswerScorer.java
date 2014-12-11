@@ -52,7 +52,7 @@ public class CombinationAnswerScorer implements AnswerScorer {
 		List<SynthesizedAnswer> for_merge = new ArrayList<SynthesizedAnswer>();
 		List<SynthesizedAnswer> synthesizedanswer = new ArrayList<SynthesizedAnswer>();
 		Map<String, Float> score_map = new HashMap<String, Float>();
-		for (Answer answer : question.answers) {
+		for (Answer answer : question.getAnswers()) {
 			if (answer.getAnswer_content().contains("百度")
 					|| answer.getAnswer_content().contains("知道")
 					|| answer.getAnswer_content().contains("文库")
@@ -63,11 +63,7 @@ public class CombinationAnswerScorer implements AnswerScorer {
 				continue;
 			}
 
-			for (String word : question.title) {
-				if (word.equals("俄罗斯人") || answer.getAnswer_content().equals("俄罗斯"))
-					System.out.println("word:" + word + "    answer:"
-							+ answer.getAnswer_content());
-
+			for (String word : question.getTitle()) {
 				if (word.contains(answer.getAnswer_content())) {
 					cached.add(answer);
 					break;
@@ -77,19 +73,19 @@ public class CombinationAnswerScorer implements AnswerScorer {
 
 		// delete those answers in question titles
 		for (Answer answer : cached) {
-			question.answers.remove(answer);
+			question.getAnswers().remove(answer);
 		}
 
-		if (question.unique_answer == false)
+		if (question.isUnique_answer() == false)
 			for (AnswerScorer scorer : scorers) {
 				scorer.score(question);
 			}
 
 		// synthesize answers final_score = sum(answer_score in all
 		// evidences)+sum(evidence_score which contains this answer)
-		for (Answer answer : question.answers) {
+		for (Answer answer : question.getAnswers()) {
 			if (score_map.get(answer.getAnswer_content()) == null) {
-				if (question.unique_answer == false)
+				if (question.isUnique_answer() == false)
 					score_map.put(answer.getAnswer_content(), answer.getScore()
 							+ answer.getSummary().getScore());
 				else
@@ -113,7 +109,7 @@ public class CombinationAnswerScorer implements AnswerScorer {
 
 		// just for test ,for person name problems 厄尔诺·鲁比克 include 鲁毕克 so maybe
 		// we should merge them
-		if (question.category == QuestionCategory.PERSON_NAME) {
+		if (question.getCategory() == QuestionCategory.PERSON_NAME) {
 
 			for (SynthesizedAnswer sa : synthesizedanswer) {
 				for (SynthesizedAnswer sa2 : synthesizedanswer) {
@@ -137,6 +133,6 @@ public class CombinationAnswerScorer implements AnswerScorer {
 		// sort answers
 		Collections.sort(synthesizedanswer);
 		Collections.reverse(synthesizedanswer);
-		question.synthesized_answers = synthesizedanswer;
+		question.setSynthesized_answers(synthesizedanswer);
 	}
 }

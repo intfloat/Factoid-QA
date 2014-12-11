@@ -13,31 +13,31 @@ import edu.pku.QRanking.Question;
  * @email stormier@126.com
  * 
  */
-public class BigramEmergeScorer implements EvidenceScorer {
+public class BigramEmergeScorer implements SummaryScorer {
 
 	public float weight;
 	
 	@Override
 	public void score(Question question) {
 		List<String> terms = new ArrayList();
-		for (int j = 0; j < question.title.size()-1; j++) {
-			if (question.tagged_title.get(j).tag().equals("PU")
-					|| question.tagged_title.get(j).tag().equals("DT")
-					|| question.tagged_title.get(j).tag().equals("PN")
-					|| question.tagged_title.get(j).tag().equals("AD"))
+		for (int j = 0; j < question.getTitle().size()-1; j++) {
+			if (question.getTagged_title().get(j).tag().equals("PU")
+					|| question.getTagged_title().get(j).tag().equals("DT")
+					|| question.getTagged_title().get(j).tag().equals("PN")
+					|| question.getTagged_title().get(j).tag().equals("AD"))
 				continue;
-			if (question.tagged_title.get(j + 1).tag().equals("PU")
-					|| question.tagged_title.get(j + 1).tag().equals("DT")
-					|| question.tagged_title.get(j + 1).tag().equals("PN")
-					|| question.tagged_title.get(j + 1).tag().equals("AD"))
+			if (question.getTagged_title().get(j + 1).tag().equals("PU")
+					|| question.getTagged_title().get(j + 1).tag().equals("DT")
+					|| question.getTagged_title().get(j + 1).tag().equals("PN")
+					|| question.getTagged_title().get(j + 1).tag().equals("AD"))
 				continue;
-			if (question.title.get(j).length() == 1
-					|| question.title.get(j + 1).length() == 1)
+			if (question.getTitle().get(j).length() == 1
+					|| question.getTitle().get(j + 1).length() == 1)
 				continue;
-			terms.add(question.title.get(j) + question.title.get(j + 1));
+			terms.add(question.getTitle().get(j) + question.getTitle().get(j + 1));
 		}
 
-		for (Answer answer : question.answers) {
+		for (Answer answer : question.getAnswers()) {
 			float score = 0;
 			List<String> evidence_bigram = new ArrayList();
 			for (int j = 0; j <answer.getSummary().getSummary_content().size()-1;j++) {

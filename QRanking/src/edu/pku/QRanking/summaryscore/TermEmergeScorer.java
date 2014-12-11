@@ -12,7 +12,7 @@ import edu.pku.QRanking.Question;
  * @email stormier@126.com
  * 
  */
-public class TermEmergeScorer implements EvidenceScorer {
+public class TermEmergeScorer implements SummaryScorer {
 
 	
 	public float weight;
@@ -21,15 +21,15 @@ public class TermEmergeScorer implements EvidenceScorer {
 	public void score(Question question) {
 
 		List<String> Terms = new ArrayList();
-			for (int j = 0; j < question.title.size(); j++) {
+			for (int j = 0; j < question.getTitle().size(); j++) {
 
-				if (question.tagged_title.get(j).tag().equals("PU")||question.tagged_title.get(j).tag().equals("DT")||question.tagged_title.get(j).tag().equals("PN")||question.tagged_title.get(j).tag().equals("AD"))
+				if (question.getTagged_title().get(j).tag().equals("PU")||question.getTagged_title().get(j).tag().equals("DT")||question.getTagged_title().get(j).tag().equals("PN")||question.getTagged_title().get(j).tag().equals("AD"))
 					continue;
-				if (question.title.get(j).length() == 1)
+				if (question.getTitle().get(j).length() == 1)
 					continue;
-				Terms.add(question.title.get(j));
+				Terms.add(question.getTitle().get(j));
 			}
-		for (Answer answer : question.answers) {
+		for (Answer answer : question.getAnswers()) {
 			float score = 0;
 			for (String term : Terms) {
 				for (String evidence_term : answer.getSummary().getSummary_content())

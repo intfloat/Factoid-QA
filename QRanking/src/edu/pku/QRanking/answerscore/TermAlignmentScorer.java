@@ -24,19 +24,19 @@ public class TermAlignmentScorer implements AnswerScorer{
 	
 	@Override
 	public void score(Question question) {
-		for (Answer answer : question.answers) {
+		for (Answer answer : question.getAnswers()) {
 			
-			for (int i = 0; i < question.title.size(); i++) {
+			for (int i = 0; i < question.getTitle().size(); i++) {
 				List<String> origin_pattern = new ArrayList();
-				for (int j = 0; j < question.title.size(); j++) {
+				for (int j = 0; j < question.getTitle().size(); j++) {
 					
-					if(question.tagged_title.get(j).tag().equals("PU"))
+					if(question.getTagged_title().get(j).tag().equals("PU"))
 						continue;
 					
                     if (i == j) {
                     	origin_pattern.add(answer.getAnswer_content());
                     } else {
-                    	origin_pattern.add(question.title.get(j));
+                    	origin_pattern.add(question.getTitle().get(j));
                     }
 				}
 				String origin_pattern_string = "";
@@ -87,7 +87,7 @@ public class TermAlignmentScorer implements AnswerScorer{
 				
                 if (count > 0) {
                    float avgLen = length /  (float)count;
-                   int questionLen = question.title.size();
+                   int questionLen = question.getTitle().size();
                    float score = weight * questionLen / avgLen;
                    answer.setScore(answer.getScore() + score);
                    System.out.println("term alignment score:" + answer.getAnswer_content()

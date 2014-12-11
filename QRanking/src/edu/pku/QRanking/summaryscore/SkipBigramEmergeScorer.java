@@ -15,31 +15,31 @@ import edu.pku.QRanking.Question;
  * @email stormier@126.com
  * 
  */
-public class SkipBigramEmergeScorer implements EvidenceScorer {
+public class SkipBigramEmergeScorer implements SummaryScorer {
 
 	public float weight;
 
 	@Override
 	public void score(Question question) {
 		List<String> terms = new ArrayList();
-		for (int j = 0; j < question.title.size() - 2; j++) {
-			if (question.tagged_title.get(j).tag().equals("PU")
-					|| question.tagged_title.get(j).tag().equals("DT")
-					|| question.tagged_title.get(j).tag().equals("PN")
-					|| question.tagged_title.get(j).tag().equals("AD"))
+		for (int j = 0; j < question.getTitle().size() - 2; j++) {
+			if (question.getTagged_title().get(j).tag().equals("PU")
+					|| question.getTagged_title().get(j).tag().equals("DT")
+					|| question.getTagged_title().get(j).tag().equals("PN")
+					|| question.getTagged_title().get(j).tag().equals("AD"))
 				continue;
-			if (question.tagged_title.get(j + 2).tag().equals("PU")
-					|| question.tagged_title.get(j + 2).tag().equals("DT")
-					|| question.tagged_title.get(j + 2).tag().equals("PN")
-					|| question.tagged_title.get(j + 2).tag().equals("AD"))
+			if (question.getTagged_title().get(j + 2).tag().equals("PU")
+					|| question.getTagged_title().get(j + 2).tag().equals("DT")
+					|| question.getTagged_title().get(j + 2).tag().equals("PN")
+					|| question.getTagged_title().get(j + 2).tag().equals("AD"))
 				continue;
-			if (question.title.get(j).length() == 1
-					|| question.title.get(j + 2).length() == 1)
+			if (question.getTitle().get(j).length() == 1
+					|| question.getTitle().get(j + 2).length() == 1)
 				continue;
-			terms.add(question.title.get(j) + ".{0,3}"
-					+ question.title.get(j + 2));
+			terms.add(question.getTitle().get(j) + ".{0,3}"
+					+ question.getTitle().get(j + 2));
 		}
-		for (Answer answer : question.answers) {
+		for (Answer answer : question.getAnswers()) {
 			float score = 0;
 			for (String term : terms) {
 				Pattern p = Pattern.compile(term);

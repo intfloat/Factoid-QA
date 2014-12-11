@@ -21,7 +21,7 @@ public class TfScorer implements AnswerScorer{
 	//add term_frequency*weight to score
 	@Override
 	public void score(Question question) {
-		for(Answer answer:question.answers)
+		for(Answer answer:question.getAnswers())
 		{
 			//answer word counts
 			int count = 0;

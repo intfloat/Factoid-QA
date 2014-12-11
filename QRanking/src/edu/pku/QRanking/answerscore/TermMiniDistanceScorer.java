@@ -21,7 +21,7 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 
 	@Override
 	public void score(Question question) {
-		for (Answer answer : question.answers) {
+		for (Answer answer : question.getAnswers()) {
 			List<Integer> answer_positions = new ArrayList<Integer>();
 			List<Integer> question_positions = new ArrayList<Integer>();
 
@@ -40,7 +40,7 @@ public class TermMiniDistanceScorer implements AnswerScorer{
 			interrogative.add("PN"); // 哪里 谁
 			interrogative.add("AD"); // 多少 为什么
 			 */
-			for (TaggedWord term : question.tagged_title) {
+			for (TaggedWord term : question.getTagged_title()) {
 				/*
 				if (interrogative.contains(term.tag())) {
 					continue;
