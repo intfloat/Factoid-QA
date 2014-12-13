@@ -1,3 +1,4 @@
+package edu.pku.retrieval;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -60,17 +61,19 @@ public final class XMLUtils {
             Element category = (Element) element.getElementsByTagName(CATEGORY).item(0);
             question.setCategory(category.getTextContent());
             Element query = (Element) element.getElementsByTagName("query").item(0);
-            question.getQuery().add(query.getTextContent().trim());
+            System.out.println(i);
+            if (query != null)
+            	question.getQuery().add(query.getTextContent().trim());
             if (question.getQuery() == null 
             		|| question.getQuery().size() == 0
             		|| question.getQuery().get(0).length() == 0) {
-            	System.err.println("Invalid query for " + i + "th question");
+//            	System.err.println("Invalid query for " + i + "th question");
             }
             
 //          add summary information if it has
             NodeList sm = element.getElementsByTagName(SUMMARY);
             for (int j = 0; j < sm.getLength(); ++j)
-            	question.getSummary().add(sm.item(j).getTextContent());
+            	question.getSummary().add(sm.item(j).getTextContent().trim());
             
 //          insert this question into question set
             qs.addQuestion(question);
