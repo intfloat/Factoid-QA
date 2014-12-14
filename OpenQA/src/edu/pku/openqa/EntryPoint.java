@@ -35,30 +35,30 @@ public class EntryPoint {
 		LOG.info("arr length: " + arr.size());
 		int begin = 0;
 		int end = arr.size();
-		for (int i = begin; i < end; ++i) {			
+		for (int i = begin; i <= end; ++i) {			
 			if (i > begin && i % 500 == 0) {
 				LOG.info("Crawled " + i + " pages.... sleep for 5 seconds...");
-//				Thread.sleep(5000);
-//				QuestionSet cur = new QuestionSet();
-//				for (int j = i - 50; j < i; ++j) {
-//					cur.addQuestion(qs.getQs().get(j));
-//				}
-//				LOG.info("qs length: " + cur.getQs().size());
-//				XMLUtils.writeXML(new File(output + "_baidu_" + (i / 50) + ".xml"), cur);
-//				break;
+				Thread.sleep(5000);
+				QuestionSet cur = new QuestionSet();
+				for (int j = i - 50; j < i; ++j) {
+					cur.addQuestion(qs.getQs().get(j));
+				}
+				LOG.info("qs length: " + cur.getQs().size());
+				XMLUtils.writeXML(new File(output + "_baidu_" + (i / 50) + ".xml"), cur);
+				break;
 			}
-//			if (i == end) break;
+			if (i == end) break;
 			Question q = arr.get(i);
-			if (q.getSummary().size() > 0) {
-				for (int j = 0; j < q.getSummary().size(); ++j)
-					System.out.println(q.getSummary().get(j));
-				continue;
-			}
+//			if (q.getSummary().size() > 0) {
+//				for (int j = 0; j < q.getSummary().size(); ++j)
+//					System.out.println(q.getSummary().get(j));
+//				continue;
+//			}
 			q.setSummary(baidu.getSearchResult(q.getQuestion()));
 //			q.setSummary(google.getSearchResult(q.getQuestion()));
 		}
-		LOG.info("qs length: " + qs.getQs().size());
-		XMLUtils.writeXML(new File(output), qs);
+//		LOG.info("qs length: " + qs.getQs().size());
+//		XMLUtils.writeXML(new File(output), qs);
 		return;
 	} // end method main
 

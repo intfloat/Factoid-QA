@@ -25,10 +25,15 @@ import org.wltea.analyzer.lucene.IKAnalyzer;
  */
 public class IndexBuilder {
 	
-    public static void main(String[] args) throws Exception {        
-        File fileDir = new File("D:/Documents/GitHub/wiki");
+    public static void main(String[] args) throws Exception {
+    	if (args.length < 2) {
+    		System.err.println("At least two arguments are needed.");
+    		System.err.println("Usage: java IndexBuilder fileDir indexDir");
+    		System.exit(1);
+    	}
+        File fileDir = new File(args[0]);
 
-        File indexDir = new File("D:/Documents/GitHub/index");
+        File indexDir = new File(args[1]);
         Directory dir = FSDirectory.open(indexDir);
         IKAnalyzer luceneAnalyzer = new IKAnalyzer();
         IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_36, luceneAnalyzer);

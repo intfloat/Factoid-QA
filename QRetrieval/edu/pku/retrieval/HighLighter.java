@@ -103,9 +103,15 @@ public class HighLighter {
 	 * @throws InvalidTokenOffsetsException
 	 */
     public static void main(String[] args) throws IOException, ParseException, InvalidTokenOffsetsException {
-    	search(new File("D:/Documents/GitHub/pkuqa/data/stage2_big.xml"), 
-    			new File("D:/Documents/GitHub/pkuqa/data/stage3_aux.xml"),
-    			"D:/Documents/GitHub/index");
+    	if (args.length < 3) {
+    		System.err.println("At least 3 arguments are needed...");
+    		System.err.println("Usage: java HightLighter stage2.xml stage3.xml indexDir");
+    		System.exit(1);
+    	}
+    	search(new File(args[0]), new File(args[1]), args[2]);
+//    	search(new File("D:/Documents/GitHub/pkuqa/data/stage2_big.xml"), 
+//    			new File("D:/Documents/GitHub/pkuqa/data/stage3_aux.xml"),
+//    			"D:/Documents/GitHub/index");
     	return;
     } // end method main
       

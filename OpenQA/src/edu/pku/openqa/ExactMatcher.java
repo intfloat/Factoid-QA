@@ -14,9 +14,9 @@ import edu.pku.openqa.util.XMLUtils;
  */
 public class ExactMatcher {
 
-	private static final String QA_PAIRS = "D:/Documents/GitHub/pkuqa/data/pair_v4.txt";
-	private static final String BAIDU_DATA = "D:/Documents/GitHub/pkuqa/data/baidu_crawler_data_v4.xml";
-	private static final String BAIDU_DATA_V2 = "D:/Documents/GitHub/pkuqa/data/baidu_crawler_data_v5.xml";
+	private static final String QA_PAIRS = "D:/Documents/GitHub/pkuqa/data/pair_v2.txt";
+	private static final String BAIDU_DATA = "D:/Documents/GitHub/pkuqa/data/baidu_crawler_data_v5.xml";
+	private static final String BAIDU_DATA_V2 = "D:/Documents/GitHub/pkuqa/data/baidu_crawler_data_v8.xml";
 	
 	private static int minimum(int a, int b, int c) {                            
         return Math.min(Math.min(a, b), c);                                      
@@ -77,10 +77,11 @@ public class ExactMatcher {
 		int matchCnt = 0;
 //		update search engine based summary
 		for (int i = 0; i < questionArr.size(); ++i) {
-			Question q = questionArr.get(i);
+			Question q = questionArr.get(i);			
 			if (i % 100 == 0) {
 				System.out.println("Progress: " + i + " questions...");
 			}
+//			if (q.getSummary().size() == 1) continue;
 			q.setQuestion(q.getQuestion().trim());
 			for (int j = 0; j < arr.size(); ++j) {
 				QAPair pair = arr.get(j);
