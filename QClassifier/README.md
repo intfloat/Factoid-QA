@@ -13,10 +13,10 @@
 程序运行
 -----------
 
-依赖[bajie](https://github.com/fxsjy/jieba), [scikitlearn](http://scikit-learn.org/)两个python模块
+依赖[jieba](https://github.com/fxsjy/jieba), [sklearn](http://scikit-learn.org/), [numpy](www.numpy.org/)等python模块
 
 运行命令为：python EntryPoint.py
 
 在python 2.6版本未发现问题，暂不支持python 3
 
-目前的分类准确率为：85% 左右
+目前的分类准确率为：87% 左右

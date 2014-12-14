@@ -1,6 +1,4 @@
-"""
-Question classifier
-"""
+# -*- coding: utf-8 -*-
 import logging, sys
 from time import time
 from sklearn.linear_model import RidgeClassifier
@@ -16,6 +14,7 @@ from sklearn import metrics
 from FeatureExtractor import FeatureExtractor
 from sklearn.feature_extraction.text import HashingVectorizer
 from sklearn.feature_extraction import FeatureHasher
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from numpy import asarray
 
 class QClassifierImpl:
@@ -93,7 +92,9 @@ class QClassifier:
         # self.clf = MultinomialNB(alpha = .01)
         # self.clf = Perceptron(n_iter = 50)
         # self.clf = KNeighborsClassifier(n_neighbors=20)
-        self.clf = LinearSVC(penalty="l2", dual=False, tol=1e-3)
+        # self.clf = BaggingClassifier(LinearSVC(penalty = 'l2', dual = False, tol = 1e-3),
+                                        # max_samples = 0.5, max_features = 0.5)
+        self.clf = LinearSVC(penalty = 'l2', dual = False, tol = 1e-3)
 
     def train(self, train_x, train_y):
         """

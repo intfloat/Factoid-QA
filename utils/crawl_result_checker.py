@@ -57,7 +57,7 @@ def merge_structured_data(file):
 
 if __name__ == '__main__':
     # merge_structured_data('../OpenQA/tmp.txt')
-    bad_checker('../data/baidu_crawler_data_v3.xml')
+    bad_checker('../data/stage3.xml')
     # merger('../data/out_baidu_')
     # for i in xrange(1, 301):
     #     name = '../data/out_baidu_' + str(i) + '.xml'
