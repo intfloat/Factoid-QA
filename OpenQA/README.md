@@ -14,15 +14,15 @@
 依赖库
 -------
 
-<i>Java JDK 1.6 or higher</i>
+Java JDK 1.6 or higher
 
-<i>Apache Commons Logging</i>
+Apache Commons Logging
 
-<i>Jsoup</i>
+[Jsoup](https://jsoup.org/)
 
-<i>[JSON-java](https://github.com/douglascrockford/JSON-java)</i>
+[JSON-java](https://github.com/douglascrockford/JSON-java)
 
-<i>Apache Commons httpclient</i>
+Apache Commons httpclient
 
-<i>Apache Commons codec</i>
+Apache Commons codec
 
