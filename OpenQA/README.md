@@ -14,7 +14,7 @@
 依赖库
 -------
 
-<i>Java JDK 1.6 or higher<i>
+<i>Java JDK 1.6 or higher</i>
 
 <i>Apache Commons Logging</i>
 
